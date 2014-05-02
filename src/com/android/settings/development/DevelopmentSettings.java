@@ -86,6 +86,7 @@ import android.widget.Toast;
 
 import com.android.internal.app.LocalePicker;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settings.AnimationScalePreference;
 import com.android.settings.ChooseLockSettingsHelper;
 import com.android.settings.R;
 import com.android.settings.RestrictedSettingsFragment;
