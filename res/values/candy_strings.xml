@@ -1176,4 +1176,12 @@
     <string name="pref_crop_behavior_title">Crop behavior</string>
     <string name="pref_crop_behavior_summary">Always use the cropped image inside the cropping area, even if the apply button hasn\'t been pressed</string>
 
+    <!-- Additional storage strings -->
+    <!-- SD card & phone storage settings title. Displayed as a title when showing the total usage of Android system. Below it will be a number like "123.4 MB" indicating used storage. [CHAR LIMIT=50] -->
+    <string name="memory_android_system_usage">Android System</string>
+    <!-- Item title describing storage used by Android system [CHAR LIMIT=48] -->
+    <string name="storage_detail_android_system">Android System</string>
+    <!-- Toast message shown when storage item of Android system is clicked [CHAR LIMIT=NONE]-->
+    <string name="storage_detail_android_system_version">Android System <xliff:g id="version">%s</xliff:g></string>
+
 </resources>
