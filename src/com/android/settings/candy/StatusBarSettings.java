@@ -337,4 +337,3 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mBatteryPercent.setEnabled(mShowBattery != 0);
     }
 }
-
