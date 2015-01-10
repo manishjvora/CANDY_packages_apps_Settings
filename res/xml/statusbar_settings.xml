@@ -98,9 +98,14 @@
 
     </PreferenceCategory>
 
+   <PreferenceCategory
+        android:title="@string/net_traffic_title">
+
     <PreferenceScreen
             android:key="nettraffic_settings"
             android:fragment="com.android.settings.candy.NetworkTrafficSettings"
             android:title="@string/nettraffic_settings_title"
             />
+
+    </PreferenceCategory>
 </PreferenceScreen>
