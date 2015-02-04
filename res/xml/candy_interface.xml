@@ -14,7 +14,7 @@
 <!-- expanded desktop -->
         <Preference
           android:key="expanded_desktop"
-          android:fragment="com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop"
+          android:fragment="com.android.settings.candy.ExpandedDesktop"
           android:layout="@layout/preference_expanded_desktop"
           android:title="@string/expanded_desktop_category"
         />
