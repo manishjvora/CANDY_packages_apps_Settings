@@ -11,6 +11,14 @@
 	      android:title="@string/button_settings_title"
 	    />
 
+<!-- expanded desktop -->
+        <Preference
+          android:key="expanded_desktop"
+          android:fragment="com.dirtyunicorns.dutweaks.fragments.ExpandedDesktop"
+          android:layout="@layout/preference_expanded_desktop"
+          android:title="@string/expanded_desktop_category"
+        />
+
 <!-- Lights Settings -->
        <PreferenceScreen
           android:id="@+id/lights_settings"
