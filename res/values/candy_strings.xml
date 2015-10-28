@@ -43,6 +43,7 @@
     <string name="advanced">Advanced</string>
     <string name="profiles_add">Add...</string>
     <string name="profile_choose_app">Choose app</string>
+    <string name="navigation_category">Navigation</string>
     <!-- Button settings  -->
     <string name="button_settings_title">Buttons</string>
     <string name="volume_settings_title">Volume</string>

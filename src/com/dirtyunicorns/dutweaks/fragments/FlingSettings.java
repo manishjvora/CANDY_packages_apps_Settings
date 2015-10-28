@@ -346,6 +346,6 @@ public class FlingSettings extends ActionFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.CANDY;
     }
 }
