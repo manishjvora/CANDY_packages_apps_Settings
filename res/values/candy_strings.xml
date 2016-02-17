@@ -451,14 +451,14 @@
     <string name="power_menu_animation_aosp">AOSP (default)</string>
     <string name="power_menu_animation_bottom">Bottom</string>
     <string name="power_menu_animation_top">Top</string>
-    <string name="power_menu_animation_rotate">Rotation</string>
-    <string name="power_menu_animation_xylon">Fly</string>
-    <string name="power_menu_animation_slide">Slide</string>
-    <string name="power_menu_animation_turn">Turn</string>
-    <string name="power_menu_animation_fly">Glow</string>
-    <string name="power_menu_animation_card">3D</string>
-    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
-    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Spiral</string>
+    <string name="power_menu_animation_xylon">Gravity</string>
+    <string name="power_menu_animation_slide">Protrude</string>
+    <string name="power_menu_animation_turn">Revolve</string>
+    <string name="power_menu_animation_fly">Materialise</string>
+    <string name="power_menu_animation_card">Venetian</string>
+    <string name="power_menu_animation_translucent_top">Protrude (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Protrude (bottom)</string>
 
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">Expanded desktop</string>
