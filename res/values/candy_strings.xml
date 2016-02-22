@@ -841,6 +841,23 @@
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+    
+    <!-- CandyRoms team -->
+    <string name="candyroms_team_title">CandyRoms team</string>
+    <string name="candy_matthew0776_title">matthew0776</string>
+    <string name="candy_mar5hal_title">mar5hal</string>
+    <string name="candy_CyberScopes_title">CyberScopes</string>
+    <string name="candy_gimmeitorilltell_title">gimmeitorilltell</string>
+    <string name="candy_rc420head_title">rc420head</string>
+    <string name="candy_flashalot_title">flashalot</string>
+    <string name="candy_venomtester_title">Venomtester</string>
+    <string name="candy_cuzz1369_title">cuzz1369</string>
+    <string name="candy_javelinanddart_title">javelinanddart</string>
+    <string name="candy_calebcabob_title">calebcabob</string>
+    <string name="candy_p70shooter_title">p70shooter</string>
+    <string name="candy_NoSpamDan_title">NoSpamDan</string>
+    <string name="candy_Yoshi_Guy_title">Yoshi_Guy</string>
+    <string name="candy_SHM_title">SHM</string>
 
     <!-- Dashboard columns -->
     <string name="dashboard_columns_title">Dashboard Columns</string>

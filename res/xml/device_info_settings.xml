@@ -33,10 +33,16 @@
         </PreferenceScreen> -->
 
         <!-- Changelog -->
- 	    <PreferenceScreen 
+	    <PreferenceScreen 
                android:key="translator"
                android:title="@string/changelog_candy_title"
                android:fragment="com.android.settings.candy.Changelog" />
+ 
+        <!-- Candy team -->
+	<PreferenceScreen 
+	        android:key="candy_team"
+	        android:title="@string/candyroms_team_title"
+	        android:fragment="com.android.settings.candy.Team" />
  
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
