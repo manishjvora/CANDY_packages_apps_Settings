@@ -1196,4 +1196,11 @@
     <string name="usb_data_auto_unlock_summary">Allow unlocked data access to your phone\'s storage through USB (MTP, PTP)</string>
     <string name="usb_data_auto_unlock_warning_summary">Your device will establish unprotected connections, everytime you connect it to a PC. Secured lock screens disable this option automatically.\n\nThis is still an experimental feature, use with caution.</string>
 
+    <!-- Optional Dashboard Switches -->
+    <string name="dashboard_switches_title">Dashboard Switches</string>
+    <string name="dashboard_switches_off">Switches Off</string>
+    <string name="dashboard_switches_on">Switches On</string>
+    <string name="dashboard_switches_summary">Change the position of the dashboard switches</string>
+    <string name="dashboard_switches_dialog_title">Select switch state</string>
+
 </resources>
