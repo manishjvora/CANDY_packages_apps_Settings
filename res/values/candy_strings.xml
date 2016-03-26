@@ -23,4 +23,7 @@
     <string name="build_date_default">2014-01-01-0000</string>
     <!-- Model Name -->
     <string name="model_name">Model name</string>
+     <!-- Changelog -->
+    <string name="changelog_candy_title">Changelog</string>
+    <string name="changelog_candy_error">Unable to load changelog</string>
 </resources>
