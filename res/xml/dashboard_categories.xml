@@ -39,14 +39,6 @@
                 settings:switchClass="com.android.settings.bluetooth.BluetoothEnabler"
                 />
 
-        <!-- SIM Cards -->
-        <dashboard-tile
-                android:id="@+id/sim_settings"
-                android:title="@string/sim_settings_title"
-                android:fragment="com.android.settings.sim.SimSettings"
-                android:icon="@drawable/ic_settings_sim"
-                />
-
         <!-- Mobile networks -->
         <dashboard-tile
                 android:id="@+id/mobile_networks"
@@ -66,6 +58,14 @@
                 android:title="@string/data_usage_summary_title"
                 android:fragment="com.android.settings.DataUsageSummary"
                 android:icon="@drawable/ic_settings_data_usage"
+                />
+
+         <!-- SIM Cards -->
+         <dashboard-tile
+                android:id="@+id/sim_settings"
+                android:title="@string/sim_settings_title"
+                android:fragment="com.android.settings.sim.SimSettings"
+                android:icon="@drawable/ic_settings_sim"
                 />
 
         <!-- Operator hook -->
