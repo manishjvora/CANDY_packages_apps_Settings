@@ -283,7 +283,7 @@ public class SettingsActivity extends Activity
             R.id.home_settings,
             R.id.dashboard,
             R.id.privacy_settings_candy,
-            R.id.bitsyko_layers,
+            R.id.substratum,
             R.id.main_settings
     };
 
@@ -1307,10 +1307,10 @@ public class SettingsActivity extends Activity
                     if (!hasPrintingSupport) {
                         removeTile = true;
                     }
-                } else if (id == R.id.bitsyko_layers) {
+                } else if (id == R.id.substratum) {
                     boolean supported = false;
                     try {
-                        supported = (getPackageManager().getPackageInfo("com.lovejoy777.rroandlayersmanager", 0).versionCode > 0);
+                        supported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {
