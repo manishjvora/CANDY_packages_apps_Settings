@@ -3398,5 +3398,8 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-    </application>
+
+    	<activity android:name=".deviceinfo.Changelog" />
+            <!-- This is the longest AndroidManifest.xml ever. -->
+        </application>
 </manifest>
