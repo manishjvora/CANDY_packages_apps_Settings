@@ -274,7 +274,7 @@
     <string name="qs_tile_screen_timeout">Screen timeout</string>
     <string name="qs_tile_candy">Candy Interface</string>
     <string name="qs_tile_heads_up">Heads up</string>
-    <string name="qs_tile_themes">Themes</string>
+    <string name="qs_tile_substratum">Substratum</string>
     <string name="qs_tile_kernel_adiutor">Kernel Adiutor</string>
     <string name="qs_tile_pie">Pie</string>
     <string name="qs_advanced_location_title">Advanced location settings</string>

@@ -154,10 +154,6 @@ public class QSTileHolder {
 		resourceName = "ic_qs_candy_on";
 		stringId = R.string.qs_tile_candy;
 		break;
-            case QSConstants.TILE_THEMES:
-                resourceName = "ic_qs_themes";
-                stringId = R.string.qs_tile_themes;
-                break;
             case QSConstants.TILE_PIE:
                 resourceName = "ic_qs_pie_on";
                 stringId = R.string.qs_tile_pie;
@@ -173,6 +169,10 @@ public class QSTileHolder {
             case QSConstants.TILE_FLOATING:
                 resourceName = "ic_qs_floating_peek";
                 stringId = R.string.qs_tile_floating;
+                break;
+            case QSConstants.TILE_SUBSTRATUM:
+                resourceName = "ic_qs_substratum";
+                stringId = R.string.qs_tile_substratum;
                 break;
             default:
                 return null;
