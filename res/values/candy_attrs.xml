@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2011 The Android Open Source Project
+<!--
+     Copyright (C) 2016 Candy Rom
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,10 +14,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<resources>
 
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:enterFadeDuration="@android:integer/config_mediumAnimTime"
-    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
-    <item android:state_activated="true" android:state_enabled="true" android:drawable="@drawable/data_sweep_right_activated" />
-    <item android:drawable="@drawable/data_sweep_right_default" />
-</selector>
+    <!-- Color picker preference -->
+    <declare-styleable name="ColorPickerPreference">
+        <attr name="defaultColor" format="color" />
+        <attr name="resetColor1" format="color" />
+        <attr name="resetColor2" format="color" />
+        <attr name="resetColor1Title" format="string" />
+        <attr name="resetColor2Title" format="string" />
+        <attr name="alphaSliderVisible" format="boolean" />
+    </declare-styleable>
+
+</resources>
