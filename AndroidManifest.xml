@@ -3436,5 +3436,9 @@
 
     	<activity android:name=".deviceinfo.Changelog" />
             <!-- This is the longest AndroidManifest.xml ever. -->
-        </application>
+
+        <!-- Battery and notification lights -->
+        <activity android:name="org.candy.candyshop.fragments.batterylight.NotificationLightSettings" />
+        <activity android:name="org.candy.candyshop.fragments.batterylight.BatteryLightSettings" />
+    </application>
 </manifest>

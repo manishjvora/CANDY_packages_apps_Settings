@@ -136,7 +136,7 @@ import org.candy.candyshop.CandyShop;
 import org.candy.candyshop.FlingSettings;
 import org.candy.candyshop.PulseSettings;
 import org.candy.candyshop.SmartbarSettings;
-import org.candy.candyshop.StockRoom;
+import org.candy.candyshop.fragments.StockRoom;
 
 import org.candy.candyshop.fragments.NavbarSettings;
 
@@ -264,7 +264,7 @@ public class SettingsGateway {
             CandyShop.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
-            OtherSettings.class.getName(),
+            StockRoom.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName()
     };
@@ -307,7 +307,7 @@ public class SettingsGateway {
             Settings.CandyShopActivity.class.getName(),
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
-            Settings.AbcOtherSettingsActivity.class.getName(),
+            Settings.StockRoomActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName()
     };
