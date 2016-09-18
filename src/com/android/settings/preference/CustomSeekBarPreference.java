@@ -51,7 +51,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         final TypedArray a = context.obtainStyledAttributes(
                 attrs, R.styleable.CustomSeekBarPreference);
 
-        mMax = attrs.getAttributeIntValue(ANDROIDNS, "max", 100);
+        mMax = attrs.getAttributeIntValue(SETTINGS_NS, "max", 100);
         mMin = attrs.getAttributeIntValue(SETTINGS_NS, "min", 0);
         mDefaultValue = attrs.getAttributeIntValue(ANDROIDNS, "defaultValue", -1);
         if (mDefaultValue > mMax) {
@@ -140,16 +140,19 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             Log.e(TAG, "Error binding view: " + ex.toString());
         }
         mStatusText = (TextView) view.findViewById(R.id.seekBarPrefValue);
+
         if (mCurrentValue == mDefaultValue) {
             mStatusText.setText(mDefaultText);
         } else {
             mStatusText.setText(String.valueOf(mCurrentValue) + mUnits);
         }
+        mStatusText.setMinimumWidth(30);
         mSeekBar.setProgress(mCurrentValue - mMin);
         mTitle = (TextView) view.findViewById(android.R.id.title);
 
         view.setDividerAllowedAbove(false);
         //view.setDividerAllowedBelow(false);
+
     }
 
     public void setMax(int max) {
