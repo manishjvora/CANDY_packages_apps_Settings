@@ -132,8 +132,11 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
-
 import com.android.settings.candy.CandyInterface;
+import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
+import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.PulseSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -374,6 +377,10 @@ public class SettingsActivity extends SettingsDrawerActivity
             WifiAPITest.class.getName(),
             WifiInfo.class.getName(),
             CandyInterface.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName(),
     };
 
 
