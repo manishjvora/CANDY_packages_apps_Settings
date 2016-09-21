@@ -18,6 +18,14 @@
           android:title="@string/lights_settings_title"
         />
 
+<!-- DUI -->
+       <Preference
+          android:key="navigation_options"
+          android:fragment="com.dirtyunicorns.dutweaks.fragments.NavbarSettings"
+          android:layout="@layout/preference_navigation"
+          android:title="@string/navigationbar_settings_title"
+       />
+
 <!-- Statusbar -->
         <PreferenceScreen
           android:id="@+id/statusbar_settings"
