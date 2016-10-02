@@ -29,4 +29,6 @@
     <!-- Candy Interface -->
     <string name="header_category_candy">Candy</string>
     <string name="candy_interface_title">Candy Interface</string>
+    <!-- Button settings  -->
+    <string name="button_settings_title">Buttons</string>
 </resources>
