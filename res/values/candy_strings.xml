@@ -26,4 +26,7 @@
      <!-- Changelog -->
     <string name="changelog_candy_title">Changelog</string>
     <string name="changelog_candy_error">Unable to load changelog</string>
+    <!-- Candy Interface -->
+    <string name="header_category_candy">Candy</string>
+    <string name="candy_interface_title">Candy Interface</string>
 </resources>
