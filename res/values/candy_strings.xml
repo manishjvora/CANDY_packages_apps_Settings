@@ -31,6 +31,7 @@
     <string name="candy_interface_title">Candy Interface</string>
     <!-- Button settings  -->
     <string name="button_settings_title">Buttons</string>
+    <string name="volume_settings_title">Volume</string>
     <string name="hardware_keys_power_key_title">Power button</string>
     <!-- Statusbar Settings -->
     <string name="statusbar_settings_title">Statusbar</string>
@@ -86,4 +87,8 @@
     <string name="display_rotation_90_title">90 degrees</string>
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
+
+    <!-- Volume Key Rotation -->
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 </resources>
