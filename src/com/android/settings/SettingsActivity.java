@@ -356,6 +356,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             MasterClear.class.getName(),
             NightDisplaySettings.class.getName(),
             TeslaCoil.class.getName(),
+            LightsSettings.class.getName(),
     };
 
 
