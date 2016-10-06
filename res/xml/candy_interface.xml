@@ -11,6 +11,13 @@
 	      android:title="@string/button_settings_title"
 	    />
 
+<!-- Lights Settings -->
+       <PreferenceScreen
+          android:id="@+id/lights_settings"
+          android:fragment="com.android.settings.candy.LightsSettings"
+          android:title="@string/lights_settings_title"
+        />
+
 <!-- Statusbar -->
         <PreferenceScreen
           android:id="@+id/statusbar_settings"
