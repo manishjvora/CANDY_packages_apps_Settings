@@ -65,4 +65,8 @@
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negociated charger max currentvoltage and battery temperature on lockscreen while charging</string>
 
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    
 </resources>
