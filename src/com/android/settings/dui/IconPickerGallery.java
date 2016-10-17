@@ -15,7 +15,7 @@
  *
  */
 
-package com.dirtyunicorns.dutweaks;
+package com.android.settings.dui;
 
 import java.io.File;
 

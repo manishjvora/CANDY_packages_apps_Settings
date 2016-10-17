@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package com.dirtyunicorns.dutweaks.preference;
+package com.android.settings.dui.preference;
 
 import android.content.Context;
 import android.content.res.TypedArray;

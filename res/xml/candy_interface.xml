@@ -28,7 +28,7 @@
 <!-- DUI -->
        <PreferenceScreen
           android:id="@+id/navigation_options"
-          android:fragment="com.dirtyunicorns.dutweaks.fragments.NavbarSettings"
+          android:fragment="com.android.settings.dui.fragments.NavbarSettings"
           android:title="@string/navigationbar_settings_title"
        />
 

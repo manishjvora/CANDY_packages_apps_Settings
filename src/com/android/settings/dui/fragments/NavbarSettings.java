@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.dutweaks.fragments;
+package com.android.settings.dui.fragments;
 
 import java.util.ArrayList;
 
@@ -41,7 +41,7 @@ import com.android.internal.utils.du.DUActionUtils;
 import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
 
-import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
+import com.android.settings.dui.preference.CustomSeekBarPreference;
 
 public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
