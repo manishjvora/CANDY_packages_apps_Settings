@@ -135,10 +135,10 @@ import com.android.settingslib.drawer.Tile;
 
 import java.net.URISyntaxException;
 import com.android.settings.candy.CandyInterface;
-import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
-import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
-import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
-import com.dirtyunicorns.dutweaks.fragments.PulseSettings;
+import com.android.settings.dui.fragments.FlingSettings;
+import com.android.settings.dui.fragments.NavbarSettings;
+import com.android.settings.dui.fragments.SmartbarSettings;
+import com.android.settings.dui.fragments.PulseSettings;
 
 import java.util.ArrayList;
 import java.util.List;

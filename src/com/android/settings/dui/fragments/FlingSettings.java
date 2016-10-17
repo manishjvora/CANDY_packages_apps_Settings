@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.dutweaks.fragments;
+package com.android.settings.dui.fragments;
 
 import java.util.ArrayList;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
-import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
+import com.android.settings.dui.preference.CustomSeekBarPreference;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -29,8 +29,8 @@ import com.android.internal.utils.du.ActionHandler;
 import com.android.internal.utils.du.DUActionUtils;
 import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
-import com.dirtyunicorns.dutweaks.IconPickHelper;
-import com.dirtyunicorns.dutweaks.preference.ActionPreference;
+import com.android.settings.dui.IconPickHelper;
+import com.android.settings.dui.preference.ActionPreference;
 
 import android.app.ActionBar;
 import android.content.Context;
