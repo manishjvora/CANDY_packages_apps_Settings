@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/gestures_title"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+<!-- 2xtts anywhere lockscreen -->
+    <com.android.settings.preference.SystemSettingSwitchPreference
+                android:key="double_tap_sleep_anywhere"
+                android:title="@string/double_tap_sleep_anywhere_title"
+                android:summary="@string/double_tap_sleep_anywhere_summary"
+                android:defaultValue="false" />
+
+<!-- 2xtts status bar -->
+    <com.android.settings.preference.SystemSettingSwitchPreference
+                android:key="double_tap_sleep_gesture"
+                android:title="@string/double_tap_to_sleep_title"
+                android:summary="@string/double_tap_to_sleep_summary"
+                android:defaultValue="false" />
+</PreferenceScreen>

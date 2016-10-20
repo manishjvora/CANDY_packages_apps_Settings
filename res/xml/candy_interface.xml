@@ -18,6 +18,12 @@
           android:title="@string/expanded_desktop_category"
         />
 
+<!-- Gestures -->
+       <PreferenceScreen
+          android:id="@+id/gestures"
+          android:fragment="com.android.settings.candy.CandyGestures"
+          android:title="@string/gestures_title" />
+
 <!-- Lights Settings -->
        <PreferenceScreen
           android:id="@+id/lights_settings"
