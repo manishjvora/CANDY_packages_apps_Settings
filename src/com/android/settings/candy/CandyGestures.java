@@ -13,42 +13,34 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.android.settings.candy;
-
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceScreen;
-
-import com.android.settings.R;
-import com.android.settings.preference.SystemSettingSwitchPreference;
-import com.android.settings.SettingsPreferenceFragment;
-
-import java.util.List;
-
-import android.os.Bundle;
-import android.preference.ListPreference;
-import android.preference.Preference;
-import android.preference.SwitchPreference;
-import android.provider.Settings;
-
-import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsLogger;
-
-public class CandyGestures extends SettingsPreferenceFragment {
-
-    @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.candy_settings_gestures);
-    }
-    
-    @Override
-    protected int getMetricsCategory()
-    {
-	return MetricsLogger.CANDY;
-    }
-}
+ 
+ package com.android.settings.candy;
+ 
+ import android.content.Intent;
+ import android.content.pm.PackageManager;
+ import android.content.pm.ResolveInfo;
+ import android.os.Bundle;
+ import android.preference.Preference;
+ import android.preference.PreferenceScreen;
+ 
+ import com.android.internal.logging.MetricsProto.MetricsEvent;
+ 
+ import com.android.settings.R;
+ import com.android.settings.SettingsPreferenceFragment;
+ 
+ import java.util.List;
+ 
+ public class CandyGestures extends SettingsPreferenceFragment {
+ 
+     @Override
+     protected int getMetricsCategory() {
+         return MetricsEvent.CANDY;
+     }
+ 
+     @Override
+     public void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+ 
+         addPreferencesFromResource(R.xml.candy_settings_gestures);
+     }
+ }
