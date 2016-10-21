@@ -92,7 +92,7 @@
                 android:title="@string/tap_to_wake"
                 android:summary="@string/tap_to_wake_summary" />
 
-        <com.android.settings.preference.SystemSettingSwitchPreference
+        <com.android.settings.preference.GlobalSettingSwitchPreference
                 android:key="wake_when_plugged_or_unplugged"
                 android:title="@string/wake_when_plugged_or_unplugged_title"
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
