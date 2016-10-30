@@ -441,6 +441,10 @@
     <string name="double_tap_sleep_anywhere_title">Tap lockscreen to sleep</string>
     <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on lockscreen to put device to sleep</string>
 
+    <!-- Audio ducking -->
+    <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
+    <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
+
     <!-- Battery Bar -->
     <string name="battery_icon">Battery icon style</string>
     <string name="battery_not_title">Battery icon in notifications</string>
