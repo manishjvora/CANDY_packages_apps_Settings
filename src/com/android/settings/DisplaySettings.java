@@ -428,12 +428,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mTapToWakePreference.setChecked(value != 0);
         }
 
-        // Update doze if it is available.
-        if (mDozePreference != null) {
-            int value = Settings.Secure.getInt(getContentResolver(), DOZE_ENABLED, 1);
-            mDozePreference.setChecked(value != 0);
-        }
-
         // Update camera gesture #1 if it is available.
         if (mCameraGesturePreference != null) {
             int value = Settings.Secure.getInt(getContentResolver(), CAMERA_GESTURE_DISABLED, 0);
@@ -506,14 +500,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
         return true;
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mDozePreference) {
-            MetricsLogger.action(getActivity(), MetricsEvent.ACTION_AMBIENT_DISPLAY);
-        }
-        return super.onPreferenceTreeClick(preference);
     }
 
     @Override
