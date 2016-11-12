@@ -18,6 +18,12 @@
 	      android:title="@string/button_settings_title"
 	    />
 
+<!-- Dashboard Options -->
+       <PreferenceScreen
+          android:id="@+id/dashboard_options"
+          android:fragment="com.android.settings.candy.CandyDashboardOptions"
+          android:title="@string/dashboard_category" />
+
 <!-- expanded desktop -->
         <PreferenceScreen
           android:id="@+id/expanded_desktop"
