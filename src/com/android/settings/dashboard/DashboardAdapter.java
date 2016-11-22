@@ -15,6 +15,8 @@
  */
 package com.android.settings.dashboard;
 
+import android.provider.Settings;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
@@ -38,6 +40,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
+import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.dashboard.conditional.Condition;
 import com.android.settings.dashboard.conditional.ConditionAdapterUtils;
 import com.android.settingslib.SuggestionParser;
@@ -106,14 +109,23 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     }
 
     public List<Tile> getSuggestions() {
-        return mSuggestions;
+        if ((Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.DISABLE_SUGGESTIONS, 0) == 0)) {
+             return null;
+        } else {
+             return mSuggestions;
+        }
     }
 
     public void setCategoriesAndSuggestions(List<DashboardCategory> categories,
             List<Tile> suggestions) {
-        mSuggestions = suggestions;
-        mCategories = categories;
-
+            mSuggestions = suggestions;
+            mCategories = categories;
+       if ((Settings.System.getInt(mContext.getContentResolver(),
+             Settings.System.DISABLE_SUGGESTIONS, 0) == 0)) {
+             mSuggestions = null;
+             recountItems();
+        } else {
         // TODO: Better place for tinting?
         TypedValue tintColor = new TypedValue();
         mContext.getTheme().resolveAttribute(com.android.internal.R.attr.colorAccent,
@@ -130,7 +142,8 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
                 }
             }
         }
-        recountItems();
+	}
+    recountItems();
     }
 
     public void setConditions(List<Condition> conditions) {
@@ -335,8 +348,13 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         holder.icon.setImageDrawable(mCache.getIcon(tile.icon));
         holder.title.setText(tile.title);
         if (!TextUtils.isEmpty(tile.summary)) {
-            holder.summary.setText(tile.summary);
-            holder.summary.setVisibility(View.VISIBLE);
+            if ((Settings.System.getInt(mContext.getContentResolver(),
+                 Settings.System.REMOVE_TILE_SUMMARY, 0) == 1)) {
+                 holder.summary.setVisibility(View.GONE);
+             } else {
+                 holder.summary.setText(tile.summary);
+                 holder.summary.setVisibility(View.VISIBLE);
+             }
         } else {
             holder.summary.setVisibility(View.GONE);
         }
