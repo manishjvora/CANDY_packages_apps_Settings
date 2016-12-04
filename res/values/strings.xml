@@ -9069,4 +9069,10 @@
     <string name="candyupdate_settings_title">CandyRoms Update Center</string>
     <string name="candyupdate_settings_summary">Check for update</string>
 
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Cellular data</string>
+    <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
+
 </resources>
