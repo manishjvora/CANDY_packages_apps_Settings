@@ -3014,6 +3014,10 @@
                 android:value="com.android.settings.webview.WebViewAppPicker" />
         </activity-alias>
 
+        <!-- Gesture Anywhere -->
+        <activity android:name="org.candy.candyshop.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name="org.candy.candyshop.gestureanywhere.GestureAnywhereCreateGestureActivity" /> 
+
         <activity android:name=".backup.BackupSettingsActivity"
                   android:label="@string/privacy_settings_title"
                   android:icon="@drawable/ic_settings_backup"
