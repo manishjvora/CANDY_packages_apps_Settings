@@ -44,13 +44,13 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-import com.android.internal.util.tesla.ColorUtils;
+import com.android.internal.util.candy.ColorUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import com.gzr.teslacoil.preference.SystemSettingSwitchPreference;
+import com.gzr.candycane.preference.SystemSettingSwitchPreference;
 import com.android.settings.preference.AppSelectListPreference;
 import com.android.settings.preference.AppSelectListPreference.PackageItem;
 
@@ -99,7 +99,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.TESLACOIL;
+        return MetricsEvent.CANDYCANE;
     }
 
     @Override

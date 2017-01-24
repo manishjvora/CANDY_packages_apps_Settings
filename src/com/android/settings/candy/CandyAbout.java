@@ -1,4 +1,4 @@
-package com.android.settings.tesla;
+package com.android.settings.candy;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -34,17 +34,17 @@ import com.android.settings.Utils;
 import java.util.regex.Pattern;
 import android.util.Log;
 
-public class TeslaAbout extends SettingsPreferenceFragment implements
+public class CandyAbout extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 		
 	private static final String KEY_SLIM_OTA = "slimota";
-        private static final String LOG_TAG = "TeslaAbout";
+        private static final String LOG_TAG = "CandyAbout";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.tesla_about);
+        addPreferencesFromResource(R.xml.candy_about);
         
         // Only the owner should see the Updater settings, if it exists
         if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
@@ -94,6 +94,6 @@ public class TeslaAbout extends SettingsPreferenceFragment implements
     
     @Override
     protected int getMetricsCategory() {
-        return InstrumentedFragment.TESLAABOUT;
+        return InstrumentedFragment.CANDYABOUT;
     }
 }

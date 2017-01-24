@@ -13,5 +13,5 @@
 -->
 
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/tesla_logo_alpha"
+    android:src="@drawable/candy_logo_alpha"
     android:tint="?android:attr/colorAccent" />

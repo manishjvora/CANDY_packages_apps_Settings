@@ -36,7 +36,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import com.gzr.teslacoil.preference.SystemSettingSwitchPreference;
+import com.gzr.candycane.preference.SystemSettingSwitchPreference;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -66,7 +66,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.TESLACOIL;
+        return MetricsEvent.CANDYCANE;
     }
 
     @Override

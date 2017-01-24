@@ -23,8 +23,8 @@
 -keep class com.android.settings.display.NightDisplaySettings
 -keep class com.android.settings.preference.*
 
-# TeslaCoil
--keep class com.gzr.teslacoil.**
+# CandyCane
+-keep class com.gzr.candycane.**
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {

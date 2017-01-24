@@ -15,17 +15,14 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title="@string/about_settings">
 
-        <!-- System update settings - launches activity -->
-        <PreferenceScreen android:key="system_update_settings"
-                android:title="@string/system_update_settings_list_item_title"
-                android:summary="@string/system_update_settings_list_item_summary">
-            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
-        </PreferenceScreen>
+        <PreferenceScreen android:key="candy_logo"
+                          android:enabled="false"
+                          android:layout="@layout/candy_logo_row" />
 
         <PreferenceScreen
-               android:key="about_tesla"
-               android:fragment="com.android.settings.tesla.TeslaAbout"
-               android:title="@string/tesla_menu_about" />
+               android:key="about_candy"
+               android:fragment="com.android.settings.candy.CandyAbout"
+               android:title="@string/candy_menu_about" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
@@ -106,11 +103,11 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
                 
-        <!-- Tesla firmware version -->
-        <Preference android:key="tesla_version"
+        <!-- Candy firmware version -->
+        <Preference android:key="candy_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/tesla_version_title"
-                android:summary="@string/tesla_version_default"/>
+                android:title="@string/candy_version_title"
+                android:summary="@string/candy_version_default"/>
                 
         <!-- Device Kernel version -->
         <com.android.settings.DividerPreference

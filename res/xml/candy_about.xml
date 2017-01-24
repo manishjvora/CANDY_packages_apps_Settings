@@ -13,10 +13,10 @@
 
 	<PreferenceScreen
 	    xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:title="About Tesla"
+	    android:title="About Candy"
 	    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-	<!-- Tesla OTA -->
+	<!-- Candy OTA -->
 	<PreferenceScreen
 	       android:key="slimota"
 	       android:title="@string/slimota_title" >
@@ -29,52 +29,52 @@
 	<!-- Changelog -->
         <PreferenceScreen 
          	android:key="translator"
-         	android:title="@string/changelog_tesla_title"
-         	android:fragment="com.android.settings.tesla.Changelog" />    
+         	android:title="@string/changelog_candy_title"
+         	android:fragment="com.android.settings.candy.Changelog" />    
 
 	<PreferenceScreen android:title="Google+">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="https://plus.google.com/communities/109330559573276360638" />
+	        android:data="https://plus.google.com/communities/108100228397827258211" />
 	</PreferenceScreen>
 
 	<PreferenceScreen android:title="Website">
 	    <intent
 	        android:action="android.intent.action.VIEW"
-	        android:data="http://validusrom.com/" />
+	        android:data="http://http://the-candy-shop.co/" />
 	</PreferenceScreen>
 
 		<!-- Developers -->
         <PreferenceCategory
-            android:key="category_tesla_developers"
+            android:key="category_candy_developers"
             android:title="Developers">
 
             <Preference
-                android:title="John Brewer (TheRingmaster)"
-                android:summary="GzR lead developer" />
+                android:title="Gimme"
+                android:summary="DAMMIT BOBBY" />
 
             <Preference
-                android:title="Martin Coulon (martinusbe)"
-                android:summary="GzR resident drunk" />
+                android:title="NoSpamDan"
+                android:summary="Boy Genious" />
 
             <Preference
-                android:title="Char (Char_G)"
-                android:summary="GzR public relations" />
+                android:title="Paul"
+                android:summary="Class Clown" />
 
             <Preference
-                android:title="Prema Chand Alugu (premaca)"
-                android:summary="GzR apprentice to resident drunk" />
+                android:title="Your Name Here"
+                android:summary="Whatever You Feel" />
 	     
 	    <Preference
-		android:title="Anthony (Yayo)"
-		android:summary="GzR slacker and #BlameAnt guy" />
+		android:title="Kevin"
+		android:summary="Oldest Guy with Candy" />
 	    <Preference
-                android:title="Adam Ovadia (oadam11)"
-                android:summary="GzR LG fanboy and beginner drunk" />
+                android:title="AXXXXXXXXX"
+                android:summary="Whatta Name" />
 	     
 	    <Preference
-		android:title="Psy After"
-		android:summary="S5-mini (g800f) maintainer" />
+		android:title="Is this you"
+		android:summary="Turd Tamper" />
         </PreferenceCategory>
 
 </PreferenceScreen>

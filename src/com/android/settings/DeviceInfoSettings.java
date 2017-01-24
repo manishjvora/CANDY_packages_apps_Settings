@@ -64,8 +64,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_SECURITY_PATCH = "security_patch";
-    private static final String KEY_TESLA_VERSION = "tesla_version";
-    private static final String KEY_TESLA_BUILD_DATE = "build_date";
+    private static final String KEY_CANDY_VERSION = "candy_version";
+    private static final String KEY_CANDY_BUILD_DATE = "build_date";
     private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
@@ -99,8 +99,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
         setStringSummary(KEY_FIRMWARE_VERSION, Build.VERSION.RELEASE);
         findPreference(KEY_FIRMWARE_VERSION).setEnabled(true);
-        setValueSummary(KEY_TESLA_VERSION, "ro.tesla.version");
-        setValueSummary(KEY_TESLA_BUILD_DATE, "ro.build.date");
+        setValueSummary(KEY_CANDY_VERSION, "ro.candy.version");
+        setValueSummary(KEY_CANDY_BUILD_DATE, "ro.build.date");
 
         final String patch = DeviceInfoUtils.getSecurityPatch();
         if (!TextUtils.isEmpty(patch)) {

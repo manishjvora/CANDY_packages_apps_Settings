@@ -134,11 +134,11 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
-import com.gzr.teslacoil.TeslaCoil;
-import com.gzr.teslacoil.fragments.FlingSettings;
-import com.gzr.teslacoil.fragments.NavbarSettings;
-import com.gzr.teslacoil.fragments.SmartbarSettings;
-import com.gzr.teslacoil.fragments.PulseSettings;
+import com.gzr.candycane.CandyCane;
+import com.gzr.candycane.fragments.FlingSettings;
+import com.gzr.candycane.fragments.NavbarSettings;
+import com.gzr.candycane.fragments.SmartbarSettings;
+import com.gzr.candycane.fragments.PulseSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -366,7 +366,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             WifiInfo.class.getName(),
             MasterClear.class.getName(),
             NightDisplaySettings.class.getName(),
-            TeslaCoil.class.getName(),
+            CandyCane.class.getName(),
             LightsSettings.class.getName(),
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),

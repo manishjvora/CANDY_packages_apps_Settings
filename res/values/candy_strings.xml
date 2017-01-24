@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2015 Tesla
+<!-- Copyright (C) 2012-2015 Candy
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -12,10 +12,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- TeslaCoil -->
-    <string name="teslacoil_title">TeslaCoil</string>
-    <string name="header_category_teslacoil">Extra Options</string>
-    <string name="teslacoil_summary">Custom options for Tesla</string>
+    <!-- CandyCane -->
+    <string name="candycane_title">CandyCane</string>
+    <string name="header_category_candycane">Extra Options</string>
+    <string name="candycane_summary">Custom options for Candy</string>
 
     <!-- General -->
     <string name="ok">Okay</string>
@@ -32,12 +32,12 @@
     <string name="profiles_add">Add...</string>
     <string name="profile_choose_app">Choose app</string>
 
-    <!-- TeslaOTA -->
-    <string name="slimota_title">Tesla Updates</string>
+    <!-- CandyOTA -->
+    <string name="slimota_title">Candy Updates</string>
 
-    <!-- About phone screen, Tesla version -->
-    <string name="tesla_version_title">Tesla version</string>
-    <string name="tesla_version_default">Unknown</string>
+    <!-- About phone screen, Candy version -->
+    <string name="candy_version_title">Candy version</string>
+    <string name="candy_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build date</string>
     <string name="build_date_default">Unknown</string>
@@ -258,11 +258,11 @@
     <string name="screenshot_sound_title">Screenshot sound</string>
 
     <!-- Changelog -->
-    <string name="changelog_tesla_title">Changelog</string>
-    <string name="changelog_tesla_error">Unable to load changelog</string>
+    <string name="changelog_candy_title">Changelog</string>
+    <string name="changelog_candy_error">Unable to load changelog</string>
     
     <!-- About Broken -->
-    <string name="tesla_menu_about">About Tesla</string>
+    <string name="candy_menu_about">About Candy</string>
 
     <!-- Scramble PIN Layout on Lockscreen -->
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
