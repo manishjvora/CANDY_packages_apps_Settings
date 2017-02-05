@@ -15,9 +15,9 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title="@string/about_settings">
 
-        <PreferenceScreen android:key="candy_logo_header"
+        <PreferenceScreen android:key="candy_logo"
                           android:enabled="false"
-                          android:layout="@layout/candy_header_aboutphone" />
+                          android:layout="@layout/candy_logo_row" />
 
         <PreferenceScreen
                android:key="about_candy"
