@@ -134,11 +134,11 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
-import com.gzr.candycane.CandyCane;
-import com.gzr.candycane.fragments.FlingSettings;
-import com.gzr.candycane.fragments.NavbarSettings;
-import com.gzr.candycane.fragments.SmartbarSettings;
-import com.gzr.candycane.fragments.PulseSettings;
+import org.candyroms.candycane.CandyCane;
+import org.candyroms.candycane.fragments.FlingSettings;
+import org.candyroms.candycane.fragments.NavbarSettings;
+import org.candyroms.candycane.fragments.SmartbarSettings;
+import org.candyroms.candycane.fragments.PulseSettings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;

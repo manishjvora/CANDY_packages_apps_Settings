@@ -24,7 +24,7 @@
 -keep class com.android.settings.preference.*
 
 # CandyCane
--keep class com.gzr.candycane.**
+-keep class org.candyroms.candycane.**
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
