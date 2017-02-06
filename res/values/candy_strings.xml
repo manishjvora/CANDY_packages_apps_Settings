@@ -53,6 +53,7 @@
 
     <!-- Lights Settings  -->
     <string name="lights_settings">Lights</string>
+    <string name="lights_dashboard_summary">Manage notification light settings</string>
 
     <!-- ADB debugging notifications -->
     <string name="enable_adb_custom">Android debugging</string>

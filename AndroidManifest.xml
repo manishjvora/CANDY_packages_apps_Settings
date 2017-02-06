@@ -1076,6 +1076,8 @@
                 android:value="com.android.settings.category.device" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.LightsSettings" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/lights_dashboard_summary" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -1087,6 +1089,7 @@
                 android:targetActivity="Settings$LightsSettingsActivity">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.LightsSettings" />
+
         </activity-alias>
 
         <activity android:name="Settings$DeviceInfoSettingsActivity"
