@@ -72,7 +72,7 @@
         <PreferenceScreen
                 android:key="volume_steps"
                 android:title="@string/volume_steps_title"
-                android:fragment="com.android.settings.tesla.VolumeSteps" />
+                android:fragment="com.android.settings.candy.VolumeSteps" />
 
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
