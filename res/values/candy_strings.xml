@@ -261,8 +261,8 @@
     <!-- Changelog -->
     <string name="changelog_candy_title">Changelog</string>
     <string name="changelog_candy_error">Unable to load changelog</string>
-    
-    <!-- About Broken -->
+
+    <!-- About Candy -->
     <string name="candy_menu_about">About Candy</string>
 
     <!-- Scramble PIN Layout on Lockscreen -->
