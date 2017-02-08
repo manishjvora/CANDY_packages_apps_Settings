@@ -943,7 +943,7 @@
             android:summary="@string/candycane_summary"
             android:taskAffinity="">
             <intent-filter android:priority="1">
-                <action android:name="gzr.candycane.CandyCane" />
+                <action android:name="candyroms.candycane.CandyCane" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
