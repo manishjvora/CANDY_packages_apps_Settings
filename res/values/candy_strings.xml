@@ -286,6 +286,9 @@
     <string name="show_enter_key_title">Show enter key</string>
     <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
 
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
     <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
     <string name="night_mode_title">Theme</string>
     <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
