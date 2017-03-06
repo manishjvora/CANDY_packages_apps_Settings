@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 Chroma
+<!-- Copyright (C) 2017 Candy Roms
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -18,19 +18,19 @@
 
 	<!-- Candy OTA -->
 	<PreferenceScreen
-	       android:key="slimota"
-	       android:title="@string/slimota_title" >
-	       <intent
-	           android:action="android.intent.action.MAIN"
-	           android:targetPackage="com.fusionjack.slimota"
-	           android:targetClass="com.fusionjack.slimota.MainActivity" />
+	    android:key="slimota"
+	    android:title="@string/slimota_title" >
+	    <intent
+	       android:action="android.intent.action.MAIN"
+	       android:targetPackage="com.fusionjack.slimota"
+	       android:targetClass="com.fusionjack.slimota.MainActivity" />
 	</PreferenceScreen>
 
 	<!-- Changelog -->
-        <PreferenceScreen 
-         	android:key="translator"
-         	android:title="@string/changelog_candy_title"
-         	android:fragment="com.android.settings.candy.Changelog" />    
+	<PreferenceScreen
+	    android:key="translator"
+	    android:title="@string/changelog_candy_title"
+	    android:fragment="com.android.settings.candy.Changelog" />
 
 	<PreferenceScreen android:title="Google+">
 	    <intent
@@ -38,43 +38,38 @@
 	        android:data="https://plus.google.com/communities/108100228397827258211" />
 	</PreferenceScreen>
 
-	<PreferenceScreen android:title="Website">
-	    <intent
-	        android:action="android.intent.action.VIEW"
-	        android:data="http://http://the-candy-shop.co/" />
-	</PreferenceScreen>
+	<!-- Developers -->
+	<PreferenceCategory
+	    android:key="category_candy_developers"
+	    android:title="Developers">
 
-		<!-- Developers -->
-        <PreferenceCategory
-            android:key="category_candy_developers"
-            android:title="Developers">
-
-            <Preference
-                android:title="Gimme"
-                android:summary="DAMMIT BOBBY" />
-
-            <Preference
-                android:title="NoSpamDan"
-                android:summary="Boy Genious" />
-
-            <Preference
-                android:title="Paul"
-                android:summary="Class Clown" />
-
-            <Preference
-                android:title="Your Name Here"
-                android:summary="Whatever You Feel" />
-	     
 	    <Preference
-		android:title="Kevin"
-		android:summary="Oldest Guy with Candy" />
+	        android:title="Gimme"
+	        android:summary="DAMMIT BOBBY" />
+
 	    <Preference
-                android:title="AXXXXXXXXX"
-                android:summary="Whatta Name" />
-	     
+	        android:title="NoSpamDan"
+	        android:summary="Boy Genious" />
+
 	    <Preference
-		android:title="Is this you"
-		android:summary="Turd Tamper" />
-        </PreferenceCategory>
+	        android:title="Paul"
+	        android:summary="Class Clown" />
+
+	    <Preference
+	        android:title="Your Name Here"
+	        android:summary="Whatever You Feel" />
+
+	    <Preference
+	        android:title="Kevin"
+	        android:summary="Oldest Guy with Candy" />
+
+	    <Preference
+	        android:title="AXXXXXXXXX"
+	        android:summary="Whatta Name" />
+
+	    <Preference
+	        android:title="Is this you"
+	        android:summary="Turd Tamper" />
+	</PreferenceCategory>
 
 </PreferenceScreen>
