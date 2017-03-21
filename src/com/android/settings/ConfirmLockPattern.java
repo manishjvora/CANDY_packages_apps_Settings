@@ -497,6 +497,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                 if (newResult) {
                     reportSuccessfullAttempt();
                 }
+                mLockPatternUtils.getLockoutAttemptDeadline(effectiveUserId);
                 startDisappearAnimation(intent);
                 checkForPendingIntent();
             } else {
