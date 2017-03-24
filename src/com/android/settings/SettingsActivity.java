@@ -232,6 +232,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final int REQUEST_SUGGESTION = 42;
 
+    private static final String MAGISKMANAGER_FRAGMENT = "com.android.settings.MagiskManager";
+
     private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
 
     private String mFragmentClass;
@@ -1027,6 +1029,13 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+        if (MAGISKMANAGER_FRAGMENT.equals(fragmentName)) {
+            Intent magiskManagerIntent = new Intent();
+            magiskManagerIntent.setClassName("com.topjohnwu.magisk", "com.topjohnwu.magisk.SplashActivity");
+            startActivity(magiskManagerIntent);
+            finish();
+            return null;
+        }
         if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
             Intent substratumIntent = new Intent();
             substratumIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
@@ -1123,6 +1132,16 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.DevelopmentSettingsActivity.class.getName()),
                 showDev, isAdmin, pm);
+
+        // Remove Magisk Manager if not installed
+        boolean magiskManagerSupported = false;
+        try {
+            magiskManagerSupported = (getPackageManager().getPackageInfo("com.topjohnwu.magisk", 0).versionCode >= 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.MagiskManagerActivity.class.getName()),
+                magiskManagerSupported, isAdmin, pm);
 
         // Remove Substratum if not installed
         boolean subSupported = false;

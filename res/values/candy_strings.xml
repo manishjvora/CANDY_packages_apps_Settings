@@ -301,6 +301,10 @@
     <string name="night_mode_auto">Automatic</string>
     <string name="keywords_display_night_mode">dark theme night mode dim screen invert brightness</string>
 
+    <!-- Magisk Manager  -->
+    <string name="magiskmanager_title">Magisk Manager</string>
+    <string name="magiskmanager_dashboard_summary">Manage root</string>
+
     <!-- Substratum  -->
     <string name="substratum_title">Substratum</string>
     <string name="substratum_dashboard_summary">Manage substratum themes</string>
