@@ -32,6 +32,12 @@
 	    android:title="@string/changelog_candy_title"
 	    android:fragment="com.android.settings.candy.Changelog" />
 
+	<PreferenceScreen android:title="Gerrit">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://gerrit.bbqdroid.org" />
+	</PreferenceScreen>
+
 	<PreferenceScreen android:title="Google+">
 	    <intent
 	        android:action="android.intent.action.VIEW"
@@ -50,6 +56,10 @@
 	    <Preference
 	        android:title="NoSpamDan"
 	        android:summary="Boy Genious" />
+
+	    <Preference
+	        android:title="CertifiedBlyndGuy"
+	        android:summary="I Did Not See That Coming" />
 
 	    <Preference
 	        android:title="Paul"
