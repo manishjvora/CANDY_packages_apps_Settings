@@ -50,36 +50,43 @@
 	    android:title="Developers">
 
 	    <Preference
-	        android:title="Gimme"
-	        android:summary="DAMMIT BOBBY" />
+	        android:title="Gimme - Tony"
+	        android:summary="DAMMIT BOBBY!" />
 
 	    <Preference
-	        android:title="NoSpamDan"
-	        android:summary="Boy Genious" />
+	        android:title="NoSpamDan - Dan"
+	        android:summary="Dano (a.k.a. Boy Genious)" />
 
 	    <Preference
-	        android:title="CertifiedBlyndGuy"
-	        android:summary="I Did Not See That Coming" />
+	        android:title="CertifiedBlyndGuy - RJ"
+	        android:summary="Uhhh, I Did Not See That Coming" />
 
 	    <Preference
-	        android:title="Paul"
-	        android:summary="Class Clown" />
-
-	    <Preference
-	        android:title="Your Name Here"
-	        android:summary="Whatever You Feel" />
-
-	    <Preference
-	        android:title="Kevin"
+	        android:title="kdp162 - Kevin"
 	        android:summary="Oldest Guy with Candy" />
 
 	    <Preference
-	        android:title="AXXXXXXXXX"
-	        android:summary="Whatta Name" />
+	        android:title="rohitporoli - Rohit"
+	        android:summary="RJ says, 'Wood Pecker lol (Cardinal)'" />
 
 	    <Preference
-	        android:title="Is this you"
-	        android:summary="Turd Tamper" />
+	        android:title="axxx007xxxz - Mattia"
+	        android:summary="Whatta Name" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+	    android:key="category_candy_mentions"
+	    android:title="Mentions">
+
+	    <Preference
+	        android:title="robertbarber - Robert"
+	        android:summary="Rubber Ducky (a.k.a. Google-Fu Guru)" />
+
+	    <Preference
+	        android:title="CandyRoms..."
+	        android:summary="Taste the Sweetness" />
+
 	</PreferenceCategory>
 
 </PreferenceScreen>
