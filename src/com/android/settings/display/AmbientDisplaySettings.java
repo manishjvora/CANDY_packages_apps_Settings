@@ -17,6 +17,7 @@
 package com.android.settings.display;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 
