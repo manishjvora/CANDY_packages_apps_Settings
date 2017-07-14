@@ -3,11 +3,11 @@
     <color name="card_background">#ff000000</color>
     <color name="lock_pattern_view_regular_color">@*android:color/secondary_text_default_material_dark</color>
     <color name="switchbar_background_color">#ff000000</color>
-    <color name="theme_accent">#fff21313</color>
+    <color name="theme_accent">#fff90028</color>
 
     <!-- Gesture Anywhere -->
-    <color name="ga_gesture_color">#fff21313</color>
+    <color name="ga_gesture_color">#fff90028</color>
 
-    <drawable name="fp_enrollment_header_landscape">#f21313</drawable>
+    <drawable name="fp_enrollment_header_landscape">#f90028</drawable>
 
 </resources>
