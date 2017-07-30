@@ -382,6 +382,11 @@
             android:key="force_resizable_activities"
             android:title="@string/force_resizable_activities"
             android:summary="@string/force_resizable_activities_summary"/>
+        
+        <SwitchPreference
+            android:key="show_cpu_info"
+            android:title="@string/show_cpu_info"
+            android:summary="@string/show_cpu_info_summary"/>
 
         <Preference
             android:key="reset_shortcut_manager_throttling"
