@@ -14,7 +14,7 @@
 
     <!-- CandyCane -->
     <string name="candycane_title">CandyCane</string>
-    <string name="header_category_candycane">Extra Options</string>
+    <string name="header_category_candycane">Advanced</string>
     <string name="candycane_summary">Custom options for Candy</string>
 
     <!-- General -->
@@ -44,7 +44,7 @@
     <string name="build_date_default">Unknown</string>
 
     <!-- Development settings enabled by default -->
-    <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
+    <string name="show_dev_already_enabled">No need, development settings are enabled by default.</string>
 
     <!-- Density category -->
     <string name="density_category">Density options</string>
