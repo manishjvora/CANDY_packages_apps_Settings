@@ -69,6 +69,7 @@ import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
 import static android.provider.Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL;
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+import static android.provider.Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
@@ -92,6 +93,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_CAMERA_GESTURE = "camera_gesture";
     private static final String KEY_WALLPAPER = "wallpaper";
     private static final String KEY_VR_DISPLAY_PREF = "vr_display_pref";
+    private static final String KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED = "wake_when_plugged_or_unplugged";
 
     private Preference mFontSizePref;
 
@@ -103,6 +105,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mTapToWakePreference;
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mCameraGesturePreference;
+    private SwitchPreference mWakeUpWhenPluggedOrUnplugged;
 
     @Override
     protected int getMetricsCategory() {
@@ -248,6 +251,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mNightModePreference.setValue(String.valueOf(currentNightMode));
             mNightModePreference.setOnPreferenceChangeListener(this);
         }
+
+        mWakeUpWhenPluggedOrUnplugged =
+            (SwitchPreference) findPreference(KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED);
+        mWakeUpWhenPluggedOrUnplugged.setOnPreferenceChangeListener(this);
+
     }
 
     private static boolean allowAllRotations(Context context) {
@@ -373,6 +381,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             int value = Settings.Secure.getInt(getContentResolver(), CAMERA_GESTURE_DISABLED, 0);
             mCameraGesturePreference.setChecked(value == 0);
         }
+        // Update screen on when plugged or unplugged if it is available.
+        if (mWakeUpWhenPluggedOrUnplugged != null) {
+            // hide option if device is already set to never wake up
+            int value = Settings.Global.getInt(getContentResolver(), WAKE_WHEN_PLUGGED_OR_UNPLUGGED, 0);
+            mWakeUpWhenPluggedOrUnplugged.setChecked(value != 0);
+        }
     }
 
     private void updateScreenSaverSummary() {
@@ -434,6 +448,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist night mode setting", e);
             }
+        }
+        if (preference == mWakeUpWhenPluggedOrUnplugged) {
+            boolean value = (Boolean) objValue;
+            Settings.Global.putInt(getContentResolver(), WAKE_WHEN_PLUGGED_OR_UNPLUGGED, value ? 1 : 0);
         }
         return true;
     }
