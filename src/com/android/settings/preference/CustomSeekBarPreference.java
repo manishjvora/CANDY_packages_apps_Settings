@@ -152,7 +152,6 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
         view.setDividerAllowedAbove(false);
         //view.setDividerAllowedBelow(false);
-
     }
 
     public void setMax(int max) {
