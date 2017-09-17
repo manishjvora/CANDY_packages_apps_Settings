@@ -140,7 +140,6 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             Log.e(TAG, "Error binding view: " + ex.toString());
         }
         mStatusText = (TextView) view.findViewById(R.id.seekBarPrefValue);
-
         if (mCurrentValue == mDefaultValue) {
             mStatusText.setText(mDefaultText);
         } else {
