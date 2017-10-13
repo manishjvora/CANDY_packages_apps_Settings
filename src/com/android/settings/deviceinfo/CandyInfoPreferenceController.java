@@ -23,12 +23,12 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.PreferenceController;
 
-public class CarbonInfoPreferenceController extends PreferenceController {
+public class CandyInfoPreferenceController extends PreferenceController {
 
-    private static final String CARBON_PROPERTY = "ro.carbon.version";
-    private static final String KEY_CARBON_VERSION = "carbon_version";
+    private static final String CANDY_PROPERTY = "ro.candy.version";
+    private static final String KEY_CANDY_VERSION = "candy_version";
 
-    public CarbonInfoPreferenceController(Context context) {
+    public CandyInfoPreferenceController(Context context) {
         super(context);
     }
 
@@ -40,13 +40,13 @@ public class CarbonInfoPreferenceController extends PreferenceController {
 
     @Override
     public String getPreferenceKey() {
-        return KEY_CARBON_VERSION;
+        return KEY_CANDY_VERSION;
     }
 
     @Override
     public void updateState(Preference preference) {
         super.updateState(preference);
-        preference.setSummary(SystemProperties.get(CARBON_PROPERTY,
+        preference.setSummary(SystemProperties.get(CANDY_PROPERTY,
                 mContext.getResources().getString(R.string.device_info_default)));
     }
 }
