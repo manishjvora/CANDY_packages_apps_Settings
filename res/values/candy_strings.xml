@@ -32,10 +32,6 @@
     <string name="proximity_wake_title">Prevent accidental wake up</string>
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
-    <!-- Encryption and credential -->
-    <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
-    <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
-
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB over network</string>
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
@@ -81,6 +77,10 @@
     <string name="ambient_doze_custom_brightness_title">Ambient and LiftToWake brightness</string>
     <string name="ambient_doze_auto_brightness_title">Ambient and LiftToWake auto brightness</string>
     <string name="ambient_doze_auto_brightness_summary">Use last screen-on adaptive brightness value for Ambient Display or Lift to Wake screen</string>
+
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
 
 </resources>
 
