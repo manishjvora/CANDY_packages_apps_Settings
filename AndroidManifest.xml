@@ -3318,7 +3318,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.abc.settings.NavbarSettings" />
+                android:value="org.candy.candyshop.fragments.NavbarSettings" />
         </activity>
 
         <!-- Smartbar settings -->
@@ -3330,7 +3330,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.abc.settings.SmartbarSettings" />
+                android:value="org.candy.candyshop.SmartbarSettings" />
         </activity>
 
         <!-- Fling settings -->
@@ -3342,7 +3342,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.abc.settings.FlingSettings" />
+                android:value="org.candy.candyshop.FlingSettings" />
         </activity>
 
         <!-- Pulse settings -->
@@ -3354,11 +3354,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.abc.settings.PulseSettings" />
+                android:value="org.candy.candyshop.PulseSettings" />
         </activity>
 
         <!-- System action picker -->
-        <activity android:name="com.abc.settings.ActionPickerDialogActivity"
+        <activity android:name="org.candy.candyshop.ActionPickerDialogActivity"
                 android:theme="@style/Theme.SmartBar.Dialog"
                 android:label="@string/choose_action_title"
                 android:excludeFromRecents="true">
@@ -3368,7 +3368,7 @@
         </activity>
 
         <!-- Icon pack picker -->
-        <activity android:name="com.abc.settings.IconPickerActivity"
+        <activity android:name="org.candy.candyshop.IconPickerActivity"
                 android:theme="@style/Theme.SmartBar.Dialog"
                 android:label="@string/icon_pack_picker_dialog_title"
                 android:excludeFromRecents="true">
@@ -3378,7 +3378,7 @@
         </activity>
 
         <!-- Icon picker proxy for gallery -->
-        <activity android:name="com.abc.settings.IconPickerGallery"
+        <activity android:name="org.candy.candyshop.IconPickerGallery"
             android:theme="@style/Theme.SmartBar.Dialog"
             android:label="@string/icon_pack_picker_dialog_title"
             android:excludeFromRecents="true">
@@ -3388,7 +3388,7 @@
         </activity>
 
         <!-- Icon pack grid -->
-        <activity android:name="com.abc.settings.IconPackGridActivity"
+        <activity android:name="org.candy.candyshop.IconPackGridActivity"
                 android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

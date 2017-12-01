@@ -134,9 +134,10 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import org.candy.candyshop.CandyShop;
 import org.candy.candyshop.FlingSettings;
-import org.candy.candyshop.NavbarSettings;
 import org.candy.candyshop.PulseSettings;
 import org.candy.candyshop.SmartbarSettings;
+
+import org.candy.candyshop.fragments.NavbarSettings;
 
 public class SettingsGateway {
 
