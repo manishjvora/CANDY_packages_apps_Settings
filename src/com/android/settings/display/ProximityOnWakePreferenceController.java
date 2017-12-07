@@ -19,7 +19,7 @@ import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 
 import com.android.settings.core.PreferenceController;
-import com.android.settings.candy.SystemSettingSwitchPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
 
 public class ProximityOnWakePreferenceController extends PreferenceController implements
         Preference.OnPreferenceChangeListener {
