@@ -20,6 +20,8 @@ import android.support.v7.preference.Preference;
 
 import com.android.settings.core.PreferenceController;
 
+import static android.provider.Settings.Secure.DOUBLE_TAP_TO_WAKE;
+
 public class TapToWakePreferenceController extends PreferenceController implements
         Preference.OnPreferenceChangeListener {
 
