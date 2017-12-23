@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-* Copyright (C) 2017 GZOSP
+* Copyright (C) 2017 GZOSP and CandyROMs
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Rom version -->
-    <string name="rom_version_title">GZOSP version</string>
+    <string name="rom_version_title">Candy version</string>
 
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
