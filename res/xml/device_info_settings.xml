@@ -18,9 +18,10 @@
         android:title="@string/about_settings">
 
         <!--Candy header -->
-        <PreferenceScreen android:key="candy_header"
-              android:enabled="false"
-              android:layout="@layout/candy_header_about" />
+        <PreferenceScreen
+                android:key="candy_header"
+                android:enabled="false"
+                android:layout="@layout/candy_header_about" />
 
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
@@ -44,16 +45,16 @@
         </Preference>
 
         <!-- Legal Information -->
-        <!--Preference
+        <Preference
                 android:key="legal_container"
                 android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" /-->
+                android:fragment="com.android.settings.LegalSettings" />
 
-        <!--Preference
+        <Preference
                 android:key="regulatory_info"
                 android:title="@string/regulatory_labels">
             <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </Preference-->
+        </Preference>
 
         <Preference
                 android:key="safety_info"
