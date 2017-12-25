@@ -18,9 +18,10 @@
         android:title="@string/about_settings">
 
         <!--Candy header -->
-        <PreferenceScreen android:key="candy_header"
-              android:enabled="false"
-              android:layout="@layout/candy_header_about" />
+        <PreferenceScreen
+                android:key="candy_header"
+                android:enabled="false"
+                android:layout="@layout/candy_header_about" />
 
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
