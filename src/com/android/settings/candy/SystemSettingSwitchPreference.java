@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.gzosp;
+package com.android.settings.candy;
 
 import android.content.Context;
 import android.provider.Settings;
