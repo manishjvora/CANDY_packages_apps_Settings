@@ -331,8 +331,8 @@ public class SimDialogActivity extends Activity {
             final SubscriptionInfo sir = mSubInfoList.get(position);
             if (sir == null) {
                 holder.title.setText(getItem(position));
-                holder.summary.setVisibility(View.GONE);
-                holder.icon.setImageDrawable(getResources()
+                holder.summary.setText("");
+                holder.icon.setImageDrawable(mContext
                         .getDrawable(R.drawable.ic_live_help));
             } else {
                 holder.title.setText(getSubscriptionDisplayName(sir));
