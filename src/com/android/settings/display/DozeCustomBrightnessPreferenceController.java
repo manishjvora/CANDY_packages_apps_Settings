@@ -22,14 +22,15 @@ import android.support.v7.preference.Preference;
 import android.text.TextUtils;
 
 import org.candy.candyshop.preference.CustomSeekBarPreference;
-import com.android.settings.core.PreferenceController;
+import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
 
 import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.ACTION_AMBIENT_DISPLAY;
 
-public class DozeCustomBrightnessPreferenceController extends PreferenceController implements
-        Preference.OnPreferenceChangeListener {
+public class DozeCustomBrightnessPreferenceController extends AbstractPreferenceController implements
+        PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
     private static final String KEY_AMBIENT_DOZE_CUSTOM_BRIGHTNESS = "ambient_doze_custom_brightness";
 
