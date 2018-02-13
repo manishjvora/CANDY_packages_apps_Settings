@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 GZOSP
-
+<!-- Copyright (C) 2018 Candy Roms
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -12,18 +11,91 @@
      limitations under the License.
 -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="horizontal" >
+	<PreferenceScreen
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:title="About Candy"
+	    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <ImageView
-            android:layout_width="600dp"
-            android:layout_height="100dp"
-            android:scaleType="centerInside"
-            android:adjustViewBounds="true"
-            android:src="@drawable/candy_about"
-        />
+	<!-- Candy OTA -->
+	<!--<PreferenceScreen
+	    android:key="slimota"
+	    android:title="@string/slimota_title" >
+	    <intent
+	       android:action="android.intent.action.MAIN"
+	       android:targetPackage="com.fusionjack.slimota"
+	       android:targetClass="com.fusionjack.slimota.MainActivity" />
+	</PreferenceScreen>-->
 
-</LinearLayout>
+	<!-- Changelog -->
+	<PreferenceScreen
+	    android:key="translator"
+	    android:title="@string/changelog_candy_title"
+	    android:fragment="com.android.settings.candy.Changelog" />
+
+	<PreferenceScreen android:title="CandyRoms Build Server Downloads">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://download.bbqdroid.org" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="CandyRoms Gerrit">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://gerrit.bbqdroid.org" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="CandyRoms GitHub">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://github.com/CandyRoms" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="CandyDevices GitHub">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://github.com/CandyDevices" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="OpenGApps">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="http://opengapps.org" />
+	</PreferenceScreen>
+
+	<PreferenceScreen android:title="Google+">
+	    <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://plus.google.com/communities/108100228397827258211" />
+	</PreferenceScreen>
+
+	<!-- Developers -->
+	<PreferenceCategory
+	    android:key="category_candy_developers"
+	    android:title="Developers">
+
+	    <Preference
+	        android:title="Tony (@Gimmeitorilltell)"
+	        android:summary="DAMMIT BOBBY!" />
+
+	    <Preference
+	        android:title="Dan (@NoSpamDan)"
+	        android:summary="Is this thing on?" />
+
+	    <Preference
+	        android:title="Chad (@Chadouming)"
+	        android:summary="Don't effing reboot my server!" />
+
+	    <Preference
+	        android:title="Kevin (@CandyMaker_D)"
+	        android:summary="Oldest Guy with Candy" />
+
+	    <Preference
+	        android:title="Nick (@spetice)"
+	        android:summary="I need a build server!" />
+
+	    <Preference
+	        android:title="Sanjay (@Yaznas53)"
+	        android:summary="I'm not sure what he wants here..." />
+	</PreferenceCategory>
+
+</PreferenceScreen>

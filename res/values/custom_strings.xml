@@ -418,4 +418,20 @@
     <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
 
     <string name="select_sim_for_sms">Select a SIM for SMS</string>
+
+    <!-- About Candy -->
+    <string name="candy_menu_about">About Candy</string>
+
+    <!-- CandyOTA -->
+    <string name="slimota_title">Candy Updates</string>
+
+    <!-- About phone screen, Candy version -->
+    <string name="candy_version_title">Candy version</string>
+    <string name="candy_version_default">Unknown</string>
+
+    <!-- Changelog -->
+    <string name="changelog_candy_title">Changelog</string>
+    <string name="changelog_summary">See some of the recent commits.</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
 </resources>
