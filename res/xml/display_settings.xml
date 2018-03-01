@@ -119,7 +119,7 @@
         android:title="@string/proximity_wake_title"
         android:summary="@string/proximity_wake_summary" />
 
-    <SwitchPreference
+    <!--<SwitchPreference
         android:key="doze"
         android:title="@string/doze_title"
         android:summary="@string/doze_summary" />
@@ -128,7 +128,7 @@
         android:key="ambient_doze_auto_brightness"
         android:title="@string/ambient_doze_auto_brightness_title"
         android:summary="@string/ambient_doze_auto_brightness_summary"
-        android:dependency="auto_brightness" />
+        android:dependency="auto_brightness" />-->
 
     <SwitchPreference
         android:key="tap_to_wake"
