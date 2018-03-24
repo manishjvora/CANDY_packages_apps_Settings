@@ -59,7 +59,7 @@
             android:title="@string/custom_light_title"
             settings:defaultColorValue="0xFFFFFFFF" />
 
-        <com.abc.settings.preferences.CustomSeekBarPreference
+        <org.candy.candyshop.preference.CustomSeekBarPreference
             android:key="custom_light_on_time"
             android:title="@string/custom_light_on_time_title"
             settings:defaultText="@string/value_equals_default"
@@ -68,7 +68,7 @@
             settings:interval="100"
             settings:units="" />
 
-        <com.abc.settings.preferences.CustomSeekBarPreference
+        <org.candy.candyshop.preference.CustomSeekBarPreference
             android:key="custom_light_off_time"
             android:title="@string/custom_light_off_time_title"
             settings:defaultText="@string/value_equals_default"
