@@ -20,7 +20,7 @@
         android:title="@string/ambient_display_screen_title">
 
     <PreferenceCategory
-            android:title="@string/ambient_display_category_triggers">
+            android:title="@string/ambient_display_screen_summary_always_on">
 
         <SwitchPreference
             android:key="ambient_display_always_on"
@@ -36,6 +36,10 @@
             android:key="ambient_display_pick_up"
             android:title="@string/ambient_display_pickup_title"
             android:fragment="com.android.settings.gestures.PickupGestureSettings" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/ambient_display_category_triggers">
 
         <SwitchPreference
             android:key="ambient_display_notification"
