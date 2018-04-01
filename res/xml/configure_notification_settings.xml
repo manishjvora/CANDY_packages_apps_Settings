@@ -78,11 +78,11 @@
         <PreferenceScreen
             android:key="notification_light"
             android:title="@string/notification_light_title"
-            android:fragment="com.dirtyunicorns.tweaks.fragments.batterylight.NotificationLightSettings" />
+            android:fragment="org.candy.candyshop.fragments.batterylight.NotificationLightSettings" />
 
         <PreferenceScreen
             android:key="charging_light"
             android:title="@string/battery_light_settings"
-            android:fragment="com.dirtyunicorns.tweaks.fragments.batterylight.BatteryLightSettings" />
+            android:fragment="org.candy.candyshop.fragments.batterylight.BatteryLightSettings" />
 
 </PreferenceScreen>
