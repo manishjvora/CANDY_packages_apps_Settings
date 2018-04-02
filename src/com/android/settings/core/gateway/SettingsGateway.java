@@ -136,7 +136,7 @@ import org.candy.candyshop.CandyShop;
 import org.candy.candyshop.FlingSettings;
 import org.candy.candyshop.PulseSettings;
 import org.candy.candyshop.SmartbarSettings;
-import org.candy.candyshop.fragments.StockRoom;
+import org.candy.candyshop.tabs.StockRoom;
 
 import org.candy.candyshop.fragments.NavbarSettings;
 
