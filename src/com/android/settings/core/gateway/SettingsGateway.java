@@ -139,6 +139,7 @@ import org.candy.candyshop.SmartbarSettings;
 import org.candy.candyshop.tabs.StockRoom;
 
 import org.candy.candyshop.fragments.NavbarSettings;
+import org.candy.candyshop.fragments.SmartPixels;
 
 public class SettingsGateway {
 
@@ -266,7 +267,8 @@ public class SettingsGateway {
             FlingSettings.class.getName(),
             StockRoom.class.getName(),
             SmartbarSettings.class.getName(),
-            PulseSettings.class.getName()
+            PulseSettings.class.getName(),
+            SmartPixels.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -309,6 +311,7 @@ public class SettingsGateway {
             Settings.FlingSettingsActivity.class.getName(),
             Settings.StockRoomActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
-            Settings.PulseSettingsActivity.class.getName()
+            Settings.PulseSettingsActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName()
     };
 }
