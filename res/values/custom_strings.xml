@@ -449,17 +449,19 @@
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
 
-    <string name="applying_theme_toast">Applying theme, please wait...</string>
-    <string name="theme_applied_toast">Theme applied!</string>
+    <string name="applying_theme_toast">Applying Sweetener, please wait...</string>
+    <string name="theme_applied_toast">Sweetness applied!</string>
+    <string name="substratum_installed_title">Sweetener is unavailable because Substratum is installed. Uninstall it if you wish to use these Sweetened themes instead.</string>
     <string name="substratum_overlays_installed_title">System themes are unavailable because a Substratum overlay is installed. Please uninstall all overlays targeting Android System to proceed.</string>
     <string name="systemui_theme_style_title">System theme</string>
-    <string name="systemui_theme_style_auto">Wallpaper based</string>
-    <string name="systemui_theme_style_light">Light style</string>
-    <string name="systemui_theme_style_dark">Dark style</string>
+    <string name="systemui_theme_style_auto">Candy Wrapper based</string>
+    <string name="systemui_theme_style_light">White chocolate</string>
+    <string name="systemui_theme_style_dark">Dark chocolate</string>
+    <string name="systemui_theme_style_blackaf">Black licorice</string>
 
-    <string name="accent_picker_dialog_title">Select an accent color</string>
-    <string name="theme_accent_picker_title">Accent color</string>
-    <string name="theme_accent_picker_summary">Select system theme accent color</string>
-    <string name="theme_accent_picker_default">Default</string>
+    <string name="accent_picker_dialog_title">Select a Sweetener</string>
+    <string name="theme_accent_picker_title">Sweetener color</string>
+    <string name="theme_accent_picker_summary">Select system Sweetener</string>
+    <string name="theme_accent_picker_default">Un-sweeten (default)</string>
 
 </resources>
