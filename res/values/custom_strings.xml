@@ -464,4 +464,7 @@
     <string name="theme_accent_picker_summary">Select system Sweetener</string>
     <string name="theme_accent_picker_default">Un-sweeten (default)</string>
 
+    <!-- Pixel color on sim card -->
+    <string name="default_sim_color">Pixel</string>
+
 </resources>
