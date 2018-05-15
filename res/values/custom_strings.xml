@@ -389,7 +389,6 @@
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_summary">Configure possible rotation angles</string>
     <string name="battery_light_settings_title">Battery LED settings</string>
-    <string name="link_volume_option_title">Link ring and notification volume</string>
 
     <!-- Custom light color -->
     <string name="light_customization">Led light notification</string>
@@ -467,4 +466,6 @@
     <!-- Pixel color on sim card -->
     <string name="default_sim_color">Pixel</string>
 
+    <!-- Unlink ring & notification volume -->
+    <string name="link_volume_option_title">Link ring and notification volume</string>
 </resources>
