@@ -28,6 +28,15 @@
                android:fragment="com.android.settings.candy.CandyAbout"
                android:title="@string/candy_menu_about" />
 
+         <!-- OTA -->
+         <Preference android:key="candy_updates"
+             android:title="@string/candyupdate_settings_title"
+             android:summary="@string/candyupdate_settings_summary">
+             <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.candy.ota"
+                 android:targetClass="com.candy.ota.MainActivity" />
+         </Preference>
+
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
                 android:title="@string/device_status"

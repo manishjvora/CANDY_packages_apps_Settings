@@ -9064,4 +9064,9 @@
     <!-- Battery stats -->
     <string name="menu_stats_reset">Reset stats</string>
     <string name="reset_stats_msg">Battery history stats are going to be reset</string>
+
+    <!-- OTA -->
+    <string name="candyupdate_settings_title">CandyRoms Update Center</string>
+    <string name="candyupdate_settings_summary">Check for update</string>
+
 </resources>
