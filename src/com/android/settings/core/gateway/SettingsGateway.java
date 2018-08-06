@@ -132,14 +132,44 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+// CandyShop search indexing
+import org.candy.candyshop.AmbientTicker;
 import org.candy.candyshop.CandyShop;
 import org.candy.candyshop.FlingSettings;
 import org.candy.candyshop.PulseSettings;
 import org.candy.candyshop.SmartbarSettings;
-import org.candy.candyshop.tabs.StockRoom;
-
+import org.candy.candyshop.fragments.batterylight.BatteryLightSettings;
+import org.candy.candyshop.fragments.batterylight.NotificationLightSettings;
+import org.candy.candyshop.fragments.AccentPicker;
+import org.candy.candyshop.fragments.AlarmBlocker;
+import org.candy.candyshop.fragments.Button;
+import org.candy.candyshop.fragments.CarrierLabel;
+import org.candy.candyshop.fragments.ChooserActivityBlacklist;
+import org.candy.candyshop.fragments.ExpandedDesktop;
+import org.candy.candyshop.fragments.Headset;
+import org.candy.candyshop.fragments.HwKeysSettings;
+import org.candy.candyshop.fragments.LedSettings;
+import org.candy.candyshop.fragments.LockScreenSettings;
 import org.candy.candyshop.fragments.NavbarSettings;
+import org.candy.candyshop.fragments.NetworkTraffic;
+import org.candy.candyshop.fragments.PowerMenu;
+import org.candy.candyshop.fragments.QsRowsColumns;
+import org.candy.candyshop.fragments.QuickSettings;
+import org.candy.candyshop.fragments.RecentsSettings;
+import org.candy.candyshop.fragments.SlimRecentsBlacklist;
+import org.candy.candyshop.fragments.SlimRecentsPanel;
 import org.candy.candyshop.fragments.SmartPixels;
+import org.candy.candyshop.fragments.StatusbarBatteryStyle;
+import org.candy.candyshop.fragments.StatusBarClockSettings;
+import org.candy.candyshop.fragments.Torch;
+import org.candy.candyshop.fragments.VolumeSteps;
+import org.candy.candyshop.fragments.WakeLockBlocker;
+import org.candy.candyshop.tabs.System;
+import org.candy.candyshop.tabs.Lockscreen;
+import org.candy.candyshop.tabs.StatusBar;
+import org.candy.candyshop.tabs.Navigation;
+import org.candy.candyshop.tabs.StockRoom;
+import org.candy.candyshop.gestureanywhere.GestureAnywhereSettings;
 
 public class SettingsGateway {
 
@@ -262,13 +292,43 @@ public class SettingsGateway {
             LockscreenDashboardFragment.class.getName(),
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
+            AmbientTicker.class.getName(),
             CandyShop.class.getName(),
-            NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
-            StockRoom.class.getName(),
-            SmartbarSettings.class.getName(),
+            NavbarSettings.class.getName(),
             PulseSettings.class.getName(),
-            SmartPixels.class.getName()
+            SmartbarSettings.class.getName(),
+            BatteryLightSettings.class.getName(),
+            NotificationLightSettings.class.getName(),
+            AccentPicker.class.getName(),
+            AlarmBlocker.class.getName(),
+            Button.class.getName(),
+            CarrierLabel.class.getName(),
+            ChooserActivityBlacklist.class.getName(),
+            ExpandedDesktop.class.getName(),
+            Headset.class.getName(),
+            HwKeysSettings.class.getName(),
+            LedSettings.class.getName(),
+            LockScreenSettings.class.getName(),
+            NetworkTraffic.class.getName(),
+            PowerMenu.class.getName(),
+            QsRowsColumns.class.getName(),
+            QuickSettings.class.getName(),
+            RecentsSettings.class.getName(),
+            SlimRecentsBlacklist.class.getName(),
+            SlimRecentsPanel.class.getName(),
+            SmartPixels.class.getName(),
+            StatusbarBatteryStyle.class.getName(),
+            StatusBarClockSettings.class.getName(),
+            Torch.class.getName(),
+            VolumeSteps.class.getName(),
+            WakeLockBlocker.class.getName(),
+            System.class.getName(),
+            Lockscreen.class.getName(),
+            StatusBar.class.getName(),
+            Navigation.class.getName(),
+            StockRoom.class.getName(),
+            GestureAnywhereSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -310,12 +370,10 @@ public class SettingsGateway {
 
             // CandyShop additions
             Settings.CandyShopActivity.class.getName(),
-            Settings.StockRoomActivity.class.getName(),
-            Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
-            Settings.StockRoomActivity.class.getName(),
-            Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
+            Settings.AlarmBlockerActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName()
     };
 }

@@ -91,6 +91,40 @@ import com.android.settings.wifi.WifiSettings;
 import java.util.Collection;
 import java.util.HashMap;
 
+import org.candy.candyshop.AmbientTicker;
+import org.candy.candyshop.CandyShop;
+import org.candy.candyshop.FlingSettings;
+import org.candy.candyshop.PulseSettings;
+import org.candy.candyshop.SmartbarSettings;
+import org.candy.candyshop.fragments.Button;
+import org.candy.candyshop.fragments.CarrierLabel;
+import org.candy.candyshop.fragments.ChooserActivityBlacklist;
+import org.candy.candyshop.fragments.Headset;
+import org.candy.candyshop.fragments.HwKeysSettings;
+import org.candy.candyshop.fragments.LedSettings;
+import org.candy.candyshop.fragments.LockScreenSettings;
+import org.candy.candyshop.fragments.NavbarSettings;
+import org.candy.candyshop.fragments.NetworkTraffic;
+import org.candy.candyshop.fragments.PowerMenu;
+import org.candy.candyshop.fragments.QsRowsColumns;
+import org.candy.candyshop.fragments.QuickSettings;
+import org.candy.candyshop.fragments.RecentsSettings;
+import org.candy.candyshop.fragments.SlimRecentsBlacklist;
+import org.candy.candyshop.fragments.SlimRecentsPanel;
+import org.candy.candyshop.fragments.SmartPixels;
+import org.candy.candyshop.fragments.StatusbarBatteryStyle;
+import org.candy.candyshop.fragments.StatusBarClockSettings;
+import org.candy.candyshop.fragments.Torch;
+import org.candy.candyshop.fragments.VolumeSteps;
+import org.candy.candyshop.fragments.batterylight.BatteryLightSettings;
+import org.candy.candyshop.fragments.batterylight.NotificationLightSettings;
+import org.candy.candyshop.gestureanywhere.GestureAnywhereSettings;
+import org.candy.candyshop.tabs.Lockscreen;
+import org.candy.candyshop.tabs.Navigation;
+import org.candy.candyshop.tabs.StatusBar;
+import org.candy.candyshop.tabs.StockRoom;
+import org.candy.candyshop.tabs.System;
+
 public final class SearchIndexableResources {
 
     /**
@@ -216,6 +250,40 @@ public final class SearchIndexableResources {
                 AutomaticStorageManagerSettings.class,
                 NO_DATA_RES_ID,
                 R.drawable.ic_settings_storage);
+
+        // Candy search indexing additions
+        addIndex(AmbientTicker.class, R.xml.ambient_ticker, R.drawable.ic_settings_display);
+        addIndex(BatteryLightSettings.class, R.xml.battery_light_settings, R.drawable.ic_settings_notifications);
+        addIndex(Button.class, R.xml.button, R.drawable.ic_navigation);
+        addIndex(CarrierLabel.class, R.xml.carrier_label, R.drawable.ic_label);
+        addIndex(ChooserActivityBlacklist.class, R.xml.chooser_activity_blacklist, R.drawable.ic_settings_applications);
+        addIndex(FlingSettings.class, R.xml.fling_settings, R.drawable.ic_navigation);
+        addIndex(GestureAnywhereSettings.class, R.xml.gesture_anywhere, R.drawable.ic_settings_gestures);
+        addIndex(Headset.class, R.xml.headset, R.drawable.ic_headset_24dp);
+        addIndex(HwKeysSettings.class, R.xml.hw_keys_settings, R.drawable.ic_navigation);
+        addIndex(LedSettings.class, R.xml.led_settings, R.drawable.ic_settings_notifications);
+        addIndex(Lockscreen.class, R.xml.lockscreen, R.drawable.ic_settings_security);
+        addIndex(LockScreenSettings.class, R.xml.lockscreen, R.drawable.ic_settings_security);
+        addIndex(NavbarSettings.class, R.xml.candy_navbar_settings, R.drawable.ic_navigation);
+        addIndex(Navigation.class, R.xml.navigation, R.drawable.ic_navigation);
+        addIndex(NetworkTraffic.class, R.xml.network_traffic, R.drawable.ic_settings_network);
+        addIndex(NotificationLightSettings.class, R.xml.notification_light_settings, R.drawable.ic_settings_notifications);
+        addIndex(PowerMenu.class, R.xml.powermenu, R.drawable.ic_settings_candyshop);
+        addIndex(PulseSettings.class, R.xml.pulse_settings, R.drawable.ic_navigation);
+        addIndex(QsRowsColumns.class, R.xml.qs_rows_columns, R.drawable.ic_settings);
+        addIndex(QuickSettings.class, R.xml.quicksettings, R.drawable.ic_settings);
+        addIndex(RecentsSettings.class, R.xml.recents_settings, R.drawable.ic_settings_applications);
+        addIndex(SlimRecentsBlacklist.class, R.xml.slim_recents_blacklist, R.drawable.ic_settings_applications);
+        addIndex(SlimRecentsPanel.class, R.xml.slim_recents_panel_settings, R.drawable.ic_settings_applications);
+        addIndex(SmartbarSettings.class, R.xml.smartbar_settings, R.drawable.ic_navigation);
+        addIndex(SmartPixels.class, R.xml.smart_pixels, R.drawable.ic_settings_display);
+        addIndex(StatusBar.class, R.xml.statusbar, R.drawable.ic_settings);
+        addIndex(StatusbarBatteryStyle.class, R.xml.statusbar_battery_style, R.drawable.ic_settings_battery);
+        addIndex(StatusBarClockSettings.class, R.xml.status_bar_clock_settings, R.drawable.ic_settings_date_time);
+        addIndex(StockRoom.class, R.xml.stockroom, R.drawable.ic_settings_candyshop);
+        addIndex(System.class, R.xml.system, R.drawable.ic_settings_notifications);
+        addIndex(Torch.class, R.xml.torch, R.drawable.ic_lightbulb_outline_24);
+        addIndex(VolumeSteps.class, R.xml.volume_steps, R.drawable.ic_settings_sound);
     }
 
     private SearchIndexableResources() {

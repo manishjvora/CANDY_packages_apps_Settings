@@ -193,14 +193,16 @@ public class Settings extends SettingsActivity {
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class SupportDashboardActivity extends SettingsActivity {}
-    public static class CandyShopActivity extends SettingsActivity {}
 
-    // Abc Additions.
+    // Candy Additions.
+    public static class CandyShopActivity extends SettingsActivity {}
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
-    public static class StockRoomActivity extends SettingsActivity {}
+    public static class StockRoomActivity extends SettingsActivity { /* empty */ }
     public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PulseSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
+    public static class WakelockBlockersActivity extends SettingsActivity { /* empty */ }
+    public static class AlarmBlockerActivity extends SettingsActivity { /* empty */ }
 }
