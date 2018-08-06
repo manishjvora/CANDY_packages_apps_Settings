@@ -307,7 +307,10 @@ public class SettingsGateway {
             Settings.DateTimeSettingsActivity.class.getName(),
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
+
+            // CandyShop additions
             Settings.CandyShopActivity.class.getName(),
+            Settings.StockRoomActivity.class.getName(),
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
             Settings.StockRoomActivity.class.getName(),
