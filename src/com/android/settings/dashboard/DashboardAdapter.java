@@ -74,6 +74,9 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     @VisibleForTesting
     DashboardData mDashboardData;
 
+    // Candy additions start
+    private boolean mHideSummary;
+
     private View.OnClickListener mTileClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -336,12 +339,16 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         }
         holder.icon.setImageDrawable(icon);
         holder.title.setText(tile.title);
-        if (!TextUtils.isEmpty(tile.summary)) {
+        if (!TextUtils.isEmpty(tile.summary) && !mHideSummary) {
             holder.summary.setText(tile.summary);
             holder.summary.setVisibility(View.VISIBLE);
         } else {
             holder.summary.setVisibility(View.GONE);
         }
+        int minHeight = mContext.getResources().getDimensionPixelSize(mHideSummary ?
+                R.dimen.dashboard_category_height :
+                R.dimen.dashboard_tile_minimum_height);
+        holder.itemView.setMinimumHeight(minHeight);
     }
 
     @Override
@@ -413,6 +420,16 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             super(itemView);
             data = itemView.findViewById(id.suggestion_list);
         }
+    }
+
+    // Candy additions start
+    public boolean isPositionFullSpan(int position) {
+        final int type = mDashboardData.getItemTypeByPosition(position);
+        return type != R.layout.dashboard_tile;
+    }
+
+    public void setHideSummary(boolean hideSummary) {
+        mHideSummary = hideSummary;
     }
 
 }

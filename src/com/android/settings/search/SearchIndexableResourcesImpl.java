@@ -103,6 +103,13 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.candy.candyshop.CandyShop;
+import org.candy.candyshop.tabs.System;
+import org.candy.candyshop.tabs.Lockscreen;
+import org.candy.candyshop.tabs.StatusBar;
+import org.candy.candyshop.tabs.Navigation;
+import org.candy.candyshop.tabs.StockRoom;
+
 public class SearchIndexableResourcesImpl implements SearchIndexableResources {
 
     private final Set<Class> sProviders = new HashSet<>();
@@ -193,6 +200,12 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(RecentLocationRequestSeeAllFragment.class);
         addIndex(PreviouslyConnectedDeviceDashboardFragment.class);
         addIndex(BluetoothDashboardFragment.class);
+        addIndex(CandyShop.class);
+        addIndex(System.class);
+        addIndex(Lockscreen.class);
+        addIndex(StatusBar.class);
+        addIndex(Navigation.class);
+        addIndex(StockRoom.class);
     }
 
     @Override

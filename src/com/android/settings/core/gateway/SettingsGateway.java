@@ -137,6 +137,13 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import org.candy.candyshop.CandyShop;
+import org.candy.candyshop.tabs.System;
+import org.candy.candyshop.tabs.Lockscreen;
+import org.candy.candyshop.tabs.StatusBar;
+import org.candy.candyshop.tabs.Navigation;
+import org.candy.candyshop.tabs.StockRoom;
+
 public class SettingsGateway {
 
     /**
@@ -261,6 +268,12 @@ public class SettingsGateway {
             DirectoryAccessDetails.class.getName(),
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
+            CandyShop.class.getName(),
+            System.class.getName(),
+            Lockscreen.class.getName(),
+            StatusBar.class.getName(),
+            Navigation.class.getName(),
+            StockRoom.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -299,5 +312,12 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
+            // CandyShop additions
+            Settings.CandyShopActivity.class.getName(),
+            Settings.SystemActivity.class.getName(),
+            Settings.LockscreenActivity.class.getName(),
+            Settings.StatusBarActivity.class.getName(),
+            Settings.NavigationActivity.class.getName(),
+            Settings.StockRoomActivity.class.getName()
     };
 }

@@ -19,19 +19,21 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../CandyShop/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
     android-slices-core \
     android-slices-view \
     android-support-compat \
+    android-support-design \
     android-support-v4 \
     android-support-v13 \
     android-support-v7-appcompat \
     android-support-v7-cardview \
     android-support-v7-preference \
     android-support-v7-recyclerview \
-    android-support-v14-preference \
+    android-support-v14-preference
 
 LOCAL_JAVA_LIBRARIES := \
     bouncycastle \
@@ -43,9 +45,26 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-arch-lifecycle-extensions \
     guava \
     jsr305 \
-    settings-logtags \
+    settings-logtags
+
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    frameworks/support/v7/preference/res \
+    frameworks/support/v14/preference/res \
+    frameworks/support/v7/appcompat/res \
+    frameworks/support/v7/recyclerview/res \
+    packages/apps/CandyShop/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-candy.xml
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages android.support.design \
+    --extra-packages android.support.v7.preference \
+    --extra-packages android.support.v14.preference \
+    --extra-packages android.support.v17.preference \
+    --extra-packages android.support.v7.appcompat \
+    --extra-packages android.support.v7.recyclerview \
+    --extra-packages org.candy.candyshop
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
