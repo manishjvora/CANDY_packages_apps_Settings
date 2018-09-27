@@ -426,7 +426,6 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
 
         private boolean mCurrentUiccProvisionState;
         private boolean mIsChecked;
-
         private boolean mCmdInProgress = false;
         private CompoundButton mSwitch;
         //Delay for progress dialog to dismiss
@@ -435,7 +434,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
 
         public SimEnablerPreference(Context context, SubscriptionInfo sir, int slotId) {
             super(context, null, com.android.internal.R.attr.checkBoxPreferenceStyle, sir, slotId);
-            setWidgetLayoutResource(R.layout.gzosp_sim_switch);
+            setWidgetLayoutResource(R.layout.candy_sim_switch);
         }
 
         private void sendMessage(int event, Handler handler, int delay) {
@@ -475,7 +474,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
                 mSwitch.setVisibility(View.GONE);
             } else {
                 mSwitch.setVisibility(View.VISIBLE);
-                mSwitch.setEnabled(!isAirplaneModeOn() || isValid());
+                mSwitch.setEnabled(!isAirplaneModeOn() && isValid());
                 setChecked(getProvisionStatus(mSlotId) == PROVISIONED);
             }
         }
