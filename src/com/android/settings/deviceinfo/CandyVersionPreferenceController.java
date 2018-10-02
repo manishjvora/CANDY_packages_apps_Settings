@@ -41,7 +41,7 @@ public class CandyVersionPreferenceController extends AbstractPreferenceControll
 
     @Override
     public String getPreferenceKey() {
-        return KEY_ARROW_VERSION;
+        return KEY_CANDY_VERSION;
     }
 
     @Override

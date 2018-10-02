@@ -54,4 +54,14 @@
     <!-- Candy version -->
     <string name="rom_version_title">CandyRoms version</string>
 
+    <!-- About phone screen, Candy version -->
+    <string name="candy_menu_about">About Candy</string>
+    <string name="candy_version_title">Candy version</string>
+    <string name="candy_version_default">Unknown</string>
+
+    <!-- Changelog -->
+    <string name="changelog_candy_title">Changelog</string>
+    <string name="changelog_summary">See some of the recent commits.</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
 </resources>

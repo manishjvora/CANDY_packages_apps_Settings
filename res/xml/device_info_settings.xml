@@ -21,6 +21,17 @@
     android:key="device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!--Candy header -->
+    <PreferenceScreen
+            android:key="candy_header"
+            android:enabled="false"
+            android:layout="@layout/candy_header_about" />
+
+    <PreferenceScreen
+           android:key="about_candy"
+           android:fragment="com.android.settings.candy.CandyAbout"
+           android:title="@string/candy_menu_about" />
+
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
