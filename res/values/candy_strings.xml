@@ -51,4 +51,7 @@
     <string name="sub_deactivate_failed">Deactivation failed.</string>
     <string name="available_sims_title">Available SIM cards</string>
 
+    <!-- Candy version -->
+    <string name="rom_version_title">CandyRoms version</string>
+
 </resources>
