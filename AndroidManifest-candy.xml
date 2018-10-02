@@ -42,8 +42,10 @@
 
                <!-- Gesture Anywhere -->
         <activity android:name="org.candy.candyshop.fragments.GestureAnywhereBuilderActivity" />
-        <activity android:name="org.candy.candyshop.fragments.GestureAnywhereCreateGestureActivity" /> 
+        <activity android:name="org.candy.candyshop.fragments.GestureAnywhereCreateGestureActivity" />
 
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="org.candy.candyshop.fragments.hideappfromrecents.HAFRAppListActivity" />
 
     </application>
 </manifest>
