@@ -44,7 +44,7 @@
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_lockscreen" />
 
-        <com.android.settings.candy.SystemSettingSwitchPreference
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="lockscreen_quick_unlock_control"
             android:title="@string/unlock_quick_unlock_control_title"
             android:summary="@string/unlock_quick_unlock_control_summary"

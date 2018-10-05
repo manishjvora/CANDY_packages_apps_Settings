@@ -273,7 +273,7 @@ public class SettingsGateway {
             Lockscreen.class.getName(),
             StatusBar.class.getName(),
             Navigation.class.getName(),
-            StockRoom.class.getName()
+            StockRoom.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -318,6 +318,6 @@ public class SettingsGateway {
             Settings.LockscreenActivity.class.getName(),
             Settings.StatusBarActivity.class.getName(),
             Settings.NavigationActivity.class.getName(),
-            Settings.StockRoomActivity.class.getName()
+            Settings.StockRoomActivity.class.getName(),
     };
 }

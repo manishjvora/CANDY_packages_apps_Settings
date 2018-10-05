@@ -29,7 +29,7 @@
         <activity android:name="Settings$CandyShopActivity"
             android:label="@string/candyshop_settings_activity"
             android:icon="@drawable/ic_settings_candyshop"
-            android:parentActivityName="Settings">
+            android:parentActivityName="Settings"
            android:taskAffinity="">
             <intent-filter android:priority="1">
                 <action android:name="org.candy.candyshop.CandyShop" />
@@ -48,6 +48,8 @@
                        android:value="com.android.settings.category.ia.homepage"/>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="org.candy.candyshop.CandyShop"/>
+            <meta-data android:name="com.android.settings.title"
+                       android:resource="@string/candyshop_settings_activity" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                        android:value="true" />
             <meta-data android:name="com.android.settings.summary"

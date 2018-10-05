@@ -61,6 +61,7 @@ LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-candy.xml
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages android.support.design \
+    --extra-packages android.support.v7.cardview \
     --extra-packages android.support.v7.preference \
     --extra-packages android.support.v14.preference \
     --extra-packages android.support.v17.preference \
