@@ -23,6 +23,10 @@ import com.android.settings.IccLockSettings;
 import com.android.settings.MasterClear;
 import com.android.settings.PrivacySettings;
 import com.android.settings.Settings;
+import com.android.settings.Settings.FlingSettingsActivity;
+import com.android.settings.Settings.NavigationSettingsActivity;
+import com.android.settings.Settings.PulseSettingsActivity;
+import com.android.settings.Settings.SmartbarSettingsActivity;
 import com.android.settings.TestingSettings;
 import com.android.settings.TetherSettings;
 import com.android.settings.TrustedCredentialsSettings;
@@ -280,10 +284,11 @@ public class SettingsGateway {
             StatusBar.class.getName(),
             Navigation.class.getName(),
             StockRoom.class.getName(),
-//            BatterySettings.class.getName(),
-//            Button.class.getName(),
-//            LockScreenSettings.class.getName(),
-//            NetworkTraffic.class.getName(),
+
+            NavigationSettingsActivity.class.getName(),
+            SmartbarSettingsActivity.class.getName(),
+            FlingSettingsActivity.class.getName(),
+            PulseSettingsActivity.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -324,15 +329,16 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
 
             // CandyShop additions
-//            Settings.CandyShopActivity.class.getName(),
             Settings.SystemActivity.class.getName(),
             Settings.LockscreenActivity.class.getName(),
             Settings.StatusBarActivity.class.getName(),
             Settings.NavigationActivity.class.getName(),
             Settings.StockRoomActivity.class.getName(),
-//            Settings.BatterySettingsActivity.class.getName(),
-//            Settings.ButtonActivity.class.getName(),
-//            Settings.LockScreenSettingsActivity.class.getName(),
-//            Settings.NetworkTrafficActivity.class.getName(),
+
+            Settings.NavigationSettingsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.PulseSettingsActivity.class.getName()
+
     };
 }
