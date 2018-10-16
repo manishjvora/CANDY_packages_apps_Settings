@@ -100,9 +100,9 @@ public class DashboardFragmentRegistry {
         PARENT_TO_CATEGORY_KEY_MAP.put(ZenModeSettings.class.getName(),
                 CategoryKey.CATEGORY_DO_NOT_DISTURB);
         PARENT_TO_CATEGORY_KEY_MAP.put(GestureSettings.class.getName(),
-            CategoryKey.CATEGORY_GESTURES);
+                CategoryKey.CATEGORY_GESTURES);
         PARENT_TO_CATEGORY_KEY_MAP.put(NightDisplaySettings.class.getName(),
-            CategoryKey.CATEGORY_NIGHT_DISPLAY);
+                CategoryKey.CATEGORY_NIGHT_DISPLAY);
         PARENT_TO_CATEGORY_KEY_MAP.put(CandyShop.class.getName(),
                 CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
 

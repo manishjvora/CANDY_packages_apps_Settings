@@ -109,6 +109,9 @@ import org.candy.candyshop.tabs.Lockscreen;
 import org.candy.candyshop.tabs.StatusBar;
 import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.StockRoom;
+import org.candy.candyshop.fragments.BatterySettings;
+import org.candy.candyshop.fragments.Button;
+import org.candy.candyshop.fragments.LockScreenSettings;
 
 public class SearchIndexableResourcesImpl implements SearchIndexableResources {
 
@@ -206,6 +209,9 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(StatusBar.class);
         addIndex(Navigation.class);
         addIndex(StockRoom.class);
+		addIndex(BatterySettings.class);
+		addIndex(Button.class);
+		addIndex(LockScreenSettings.class);
     }
 
     @Override

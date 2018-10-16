@@ -167,10 +167,11 @@ public class Settings extends SettingsActivity {
 
     // Candy additions
     public static class CandyShopActivity extends SettingsActivity { /* empty */ }
-    public static class RootManagementActivity extends SettingsActivity { /* empty */ }
     public static class SystemActivity extends SettingsActivity { /* empty */ }
     public static class LockscreenActivity extends SettingsActivity { /* empty */ }
     public static class StatusBarActivity extends SettingsActivity { /* empty */ }
     public static class NavigationActivity extends SettingsActivity { /* empty */ }
     public static class StockRoomActivity extends SettingsActivity { /* empty */ }
+
+
 }
