@@ -146,6 +146,7 @@ import org.candy.candyshop.tabs.StockRoom;
 import org.candy.candyshop.fragments.BatterySettings;
 import org.candy.candyshop.fragments.Button;
 import org.candy.candyshop.fragments.LockScreenSettings;
+import org.candy.candyshop.fragments.NetworkTraffic;
 
 public class SettingsGateway {
 
@@ -279,9 +280,10 @@ public class SettingsGateway {
             StatusBar.class.getName(),
             Navigation.class.getName(),
             StockRoom.class.getName(),
-            BatterySettings.class.getName(),
-            Button.class.getName(),
-            LockScreenSettings.class.getName(),
+//            BatterySettings.class.getName(),
+//            Button.class.getName(),
+//            LockScreenSettings.class.getName(),
+//            NetworkTraffic.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -322,11 +324,15 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
 
             // CandyShop additions
-            Settings.CandyShopActivity.class.getName(),
+//            Settings.CandyShopActivity.class.getName(),
             Settings.SystemActivity.class.getName(),
             Settings.LockscreenActivity.class.getName(),
             Settings.StatusBarActivity.class.getName(),
             Settings.NavigationActivity.class.getName(),
             Settings.StockRoomActivity.class.getName(),
+//            Settings.BatterySettingsActivity.class.getName(),
+//            Settings.ButtonActivity.class.getName(),
+//            Settings.LockScreenSettingsActivity.class.getName(),
+//            Settings.NetworkTrafficActivity.class.getName(),
     };
 }

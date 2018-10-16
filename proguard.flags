@@ -6,6 +6,7 @@
 
 # CandyShop
 -keep class org.candy.candyshop.**
+-keep class org.candy.candyshop.navigation**
 
 # Keep all preference controllers needed by slice and DashboardFragment.
 -keep class * extends com.android.settings.core.BasePreferenceController {

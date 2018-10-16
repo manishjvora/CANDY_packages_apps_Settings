@@ -29,14 +29,14 @@
 
     <!-- Changelog -->
     <string name="changelog_candy_title">Changelog</string>
-    <string name="changelog_summary">See some of the recent commits.</string>
+    <string name="changelog_summary">See the most recent commits</string>
     <string name="changelog_error">Unable to load changelog</string>
 
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
     <!-- CandyShop -->
     <string name="candyshop_settings_activity">CandyShop</string>
-    <string name="candyshop_settings_activity_summary">Additional project settings</string>
+    <string name="candyshop_settings_activity_summary">Where the sweet stuff is...</string>
 
     <!-- Root Management -->
     <string name="rootmanagement_title">Root management</string>
@@ -68,5 +68,5 @@
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-    
+
 </resources>
