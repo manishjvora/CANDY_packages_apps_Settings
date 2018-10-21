@@ -70,7 +70,9 @@
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
     <!-- System theme -->
-    <string name="applying_theme_toast">Applying theme, please wait...</string>
-    <string name="theme_applied_toast">Theme applied!</string>
+    <string name="applying_theme_toast">Applying sweetness, please wait...</string>
+    <string name="theme_applied_toast">Sweetness applied!</string>
+    <string name="substratum_overlays_installed_title">Candy sweetness is unavailable because a Substratum overlay is installed. Please uninstall all overlays targeting Android System to proceed.</string>
+    <string name="systemui_theme_blackaf">Black Licorice</string>
 
 </resources>
