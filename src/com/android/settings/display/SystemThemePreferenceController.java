@@ -82,16 +82,8 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
             int valueIndex = mSystemThemeStyle.findIndexOfValue(value);
             mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
             try {
-                IStatusBarService statusBarService = IStatusBarService.Stub.asInterface(ServiceManager.checkService(Context.STATUS_BAR_SERVICE));
-                if (statusBarService != null) {
-                    try {
-                        statusBarService.restartUI();
-                        reload();
-                    } catch (RemoteException e) {
-                        // do nothing.
-                    }
-                }
-            }catch (Exception ignored){
+                reload()
+            } catch (Exception ignored){
             }
         }
         return true;
