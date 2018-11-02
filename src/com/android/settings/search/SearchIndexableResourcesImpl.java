@@ -109,11 +109,15 @@ import org.candy.candyshop.tabs.Lockscreen;
 import org.candy.candyshop.tabs.StatusBar;
 import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.StockRoom;
+import org.candy.candyshop.fragments.AccentPicker;
 import org.candy.candyshop.fragments.BatterySettings;
 import org.candy.candyshop.fragments.Button;
 import org.candy.candyshop.fragments.ClockDateSettings;
 import org.candy.candyshop.fragments.LockScreenSettings;
+import org.candy.candyshop.fragments.NavGestureSettings;
 import org.candy.candyshop.fragments.NetworkTraffic;
+import org.candy.candyshop.fragments.QsRowsColumns;
+import org.candy.candyshop.fragments.Torch;
 
 public class SearchIndexableResourcesImpl implements SearchIndexableResources {
 
@@ -207,17 +211,23 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(BluetoothDashboardFragment.class);
 
         // Candy additions
+        // Shop
         addIndex(CandyShop.class);
         addIndex(System.class);
         addIndex(Lockscreen.class);
         addIndex(StatusBar.class);
         addIndex(Navigation.class);
         addIndex(StockRoom.class);
+        // Fragments
+        addIndex(AccentPicker.class);
         addIndex(BatterySettings.class);
         addIndex(Button.class);
         addIndex(ClockDateSettings.class);
         addIndex(LockScreenSettings.class);
+        addIndex(NavGestureSettings.class);
         addIndex(NetworkTraffic.class);
+        addIndex(QsRowsColumns.class);
+        addIndex(Torch.class);
     }
 
     @Override
