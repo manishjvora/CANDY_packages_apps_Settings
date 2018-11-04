@@ -4,10 +4,6 @@
 # Keep all Fragments in this package, which are used by reflection.
 -keep public class com.android.settings.** extends android.app.Fragment
 
-# CandyShop
--keep class org.candy.candyshop.**
--keep class org.candy.candyshop.navigation**
-
 # Keep all preference controllers needed by slice and DashboardFragment.
 -keep class * extends com.android.settings.core.BasePreferenceController {
     *;
@@ -16,6 +12,10 @@
 -keep class * extends com.android.settings.core.TogglePreferenceController {
     *;
 }
+
+# CandyShop
+-keep class org.candy.candyshop.**
+-keep class org.candy.candyshop.navigation**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class * extends android.app.Activity {

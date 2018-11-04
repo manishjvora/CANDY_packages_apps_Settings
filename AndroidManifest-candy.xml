@@ -26,7 +26,7 @@
 
     <application>
         <!-- CandyShop -->
-        <activity android:name="Settings$CandyShopActivity"
+        <activity android:name=".Settings$CandyShopActivity"
             android:label="@string/candyshop_settings_activity"
             android:icon="@drawable/ic_settings_candyshop" >
             <intent-filter android:priority="12">
