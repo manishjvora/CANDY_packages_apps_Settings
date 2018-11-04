@@ -26,11 +26,12 @@ import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.dashboard.suggestions.SuggestionFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class DoubleTapPowerSettings extends DashboardFragment {
+public class DoubleTapPowerSettings extends DashboardFragment implements Indexable {
 
     private static final String TAG = "DoubleTapPower";
 
@@ -61,7 +62,7 @@ public class DoubleTapPowerSettings extends DashboardFragment {
         return R.xml.double_tap_power_settings;
     }
 
-    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
                 public List<SearchIndexableResource> getXmlResourcesToIndex(

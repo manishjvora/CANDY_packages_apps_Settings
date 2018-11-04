@@ -103,13 +103,12 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.candy.candyshop.CandyShop;
+//import org.candy.candyshop.CandyShop;
 import org.candy.candyshop.tabs.System;
 import org.candy.candyshop.tabs.Lockscreen;
 import org.candy.candyshop.tabs.StatusBar;
 import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.StockRoom;
-import org.candy.candyshop.fragments.AccentPicker;
 import org.candy.candyshop.fragments.BatterySettings;
 import org.candy.candyshop.fragments.Button;
 import org.candy.candyshop.fragments.ClockDateSettings;
@@ -212,14 +211,13 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
 
         // Candy additions
         // Shop
-        addIndex(CandyShop.class);
+        //addIndex(CandyShop.class);
         addIndex(System.class);
         addIndex(Lockscreen.class);
         addIndex(StatusBar.class);
         addIndex(Navigation.class);
         addIndex(StockRoom.class);
         // Fragments
-        addIndex(AccentPicker.class);
         addIndex(BatterySettings.class);
         addIndex(Button.class);
         addIndex(ClockDateSettings.class);
