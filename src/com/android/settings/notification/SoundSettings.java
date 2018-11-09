@@ -284,6 +284,7 @@ public class SoundSettings extends DashboardFragment {
                         dockAudioMediaPreferenceController,
                         bootSoundPreferenceController,
                         emergencyTonePreferenceController)));
+        controllers.add(new ScreenshotSoundPreferenceController(context, fragment, lifecycle));
 
         return controllers;
     }
