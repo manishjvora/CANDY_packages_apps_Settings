@@ -86,8 +86,4 @@
     <!-- Power button flashlight -->
     <string name="gesture_double_tap_power_torch_toast">Screen off torch gesture is now disabled</string>
 
-     <!-- Nav Gesture -->
-    <string name="full_gesture_mode_title">Enable full gesture mode</string>
-    <string name="full_gesture_mode_summary">This mode will disable also the back button and you will be able to trigger a back button action by a left swipe on navbar. Right swipe will still trigger the last-app action.</string>
-
 </resources>
