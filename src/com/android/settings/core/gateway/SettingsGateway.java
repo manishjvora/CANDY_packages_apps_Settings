@@ -329,6 +329,7 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
 
             // CandyShop additions
+            Settings.CandyShopActivity.class.getName(),
             Settings.SystemActivity.class.getName(),
             Settings.LockscreenActivity.class.getName(),
             Settings.StatusBarActivity.class.getName(),

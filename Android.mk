@@ -22,6 +22,28 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../CandyShop/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../SmartNavSettings/src)
 
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages android.support.design \
+    --extra-packages android.support.v7.cardview \
+    --extra-packages android.support.v7.preference \
+    --extra-packages android.support.v14.preference \
+    --extra-packages android.support.v17.preference \
+    --extra-packages android.support.v7.appcompat \
+    --extra-packages android.support.v7.recyclerview \
+    --extra-packages org.candy.candyshop
+
+LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-candy.xml
+LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest-SmartNav.xml
+
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    frameworks/support/v7/preference/res \
+    frameworks/support/v14/preference/res \
+    frameworks/support/v7/appcompat/res \
+    frameworks/support/v7/recyclerview/res \
+    frameworks/support/design/res \
+    packages/apps/CandyShop/res \
+    packages/apps/SmartNavSettings/res
+
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
     android-slices-core \
@@ -49,28 +71,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     jsr305 \
     settings-logtags
 
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    frameworks/support/v7/preference/res \
-    frameworks/support/v14/preference/res \
-    frameworks/support/v7/appcompat/res \
-    frameworks/support/v7/recyclerview/res \
-    frameworks/support/design/res \
-    packages/apps/CandyShop/res \
-    packages/apps/SmartNavSettings/res
-
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
-LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-candy.xml
-LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-SmartNav.xml
-
-LOCAL_AAPT_FLAGS := --auto-add-overlay \
-    --extra-packages android.support.design \
-    --extra-packages android.support.v7.cardview \
-    --extra-packages android.support.v7.preference \
-    --extra-packages android.support.v14.preference \
-    --extra-packages android.support.v17.preference \
-    --extra-packages android.support.v7.appcompat \
-    --extra-packages android.support.v7.recyclerview \
-    --extra-packages org.candy.candyshop
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
