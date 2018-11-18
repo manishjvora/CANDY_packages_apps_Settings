@@ -140,6 +140,7 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
+import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import org.candy.candyshop.CandyShop;
 import org.candy.candyshop.tabs.System;
@@ -166,6 +167,7 @@ public class SettingsGateway {
             SimSettings.class.getName(),
             TetherSettings.class.getName(),
             WifiP2pSettings.class.getName(),
+            WifiTetherSettings.class.getName(),
             BackgroundCheckSummary.class.getName(),
             VpnSettings.class.getName(),
             DateTimeSettings.class.getName(),
