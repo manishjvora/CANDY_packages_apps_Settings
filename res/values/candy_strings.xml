@@ -118,4 +118,11 @@
     <!-- Ambient category -->
     <string name="ambient_display_category">Ambient options</string>
     <string name="custom_ambient_display_summary">Configure advanced Ambient Display</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_value_title">Lower brightness if Night Light</string>
+    <string name="night_auto_value_disabled">Disabled</string>
+    <string name="night_auto_value_min">Minimum brightness</string>
+    <string name="night_bright_low">Low brightness</string>
+    <string name="night_bright_midlow">Mid low brightness</string>
 </resources>
