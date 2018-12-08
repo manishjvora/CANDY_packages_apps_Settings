@@ -82,12 +82,21 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
             int valueIndex = mSystemThemeStyle.findIndexOfValue(value);
             mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
             try {
-                reload();
+                IStatusBarService statusBarService = IStatusBarService.Stub.asInterface(ServiceManager.checkService(Context.STATUS_BAR_SERVICE));
+                if (statusBarService != null) {
+                    try {
+                        statusBarService.restartUI();
+                        reload();
+                    } catch (RemoteException e) {
+                        // do nothing.
+                    }
+                }
             }catch (Exception ignored){
             }
         }
         return true;
     }
+
     private void reload(){
         Intent intent2 = new Intent(Intent.ACTION_MAIN);
         intent2.addCategory(Intent.CATEGORY_HOME);
