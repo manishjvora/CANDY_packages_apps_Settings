@@ -82,7 +82,7 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
             int valueIndex = mSystemThemeStyle.findIndexOfValue(value);
             mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
             try {
-                reload()
+                reload();
             } catch (Exception ignored){
             }
         }

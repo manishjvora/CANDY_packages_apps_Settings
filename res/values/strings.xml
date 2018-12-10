@@ -9872,8 +9872,6 @@
         ]]>
     </string>
 
-    <!-- Name of setting for switching device theme [CHAR LIMIT=60] -->
-    <string name="color_theme">Color theme</string>
     <!-- Name of default device theme [CHAR LIMIT=60] -->
     <string name="default_theme">Default</string>
     <!-- Temporary reboot string, will be removed -->
