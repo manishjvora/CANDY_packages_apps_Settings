@@ -83,11 +83,12 @@ public class SystemThemePreferenceController extends AbstractPreferenceControlle
             mSystemThemeStyle.setSummary(mSystemThemeStyle.getEntries()[valueIndex]);
             try {
                 reload();
-            }catch (Exception ignored){
+            } catch (Exception ignored){
             }
         }
         return true;
     }
+
     private void reload(){
         Intent intent2 = new Intent(Intent.ACTION_MAIN);
         intent2.addCategory(Intent.CATEGORY_HOME);
