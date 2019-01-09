@@ -115,7 +115,7 @@ import org.candy.candyshop.fragments.ClockDateSettings;
 import org.candy.candyshop.fragments.LockScreenSettings;
 import org.candy.candyshop.fragments.NavGestureSettings;
 import org.candy.candyshop.fragments.NetworkTraffic;
-import org.candy.candyshop.fragments.QsRowsColumns;
+import org.candy.candyshop.fragments.QuickSettings;
 import org.candy.candyshop.fragments.Torch;
 
 public class SearchIndexableResourcesImpl implements SearchIndexableResources {
@@ -224,7 +224,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(LockScreenSettings.class);
         addIndex(NavGestureSettings.class);
         addIndex(NetworkTraffic.class);
-        addIndex(QsRowsColumns.class);
+        addIndex(QuickSettings.class);
         addIndex(Torch.class);
     }
 
