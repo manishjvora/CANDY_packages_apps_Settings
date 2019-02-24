@@ -49,7 +49,7 @@ public class CandyVersionPreferenceController extends AbstractPreferenceControll
         super.displayPreference(screen);
         final Preference pref = screen.findPreference(KEY_CANDY_VERSION);
         if (pref == null) return;
-        String version = "Candy-" + SystemProperties.get(PROPERTY_CANDY_VERSION);
+        String version = SystemProperties.get(PROPERTY_CANDY_VERSION);
         pref.setSummary(version);
     }
 }
