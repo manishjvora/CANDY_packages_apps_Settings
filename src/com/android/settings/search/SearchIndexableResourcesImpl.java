@@ -116,7 +116,7 @@ import org.candy.candyshop.fragments.LockScreenSettings;
 import org.candy.candyshop.fragments.NavGestureSettings;
 import org.candy.candyshop.fragments.NetworkTraffic;
 import org.candy.candyshop.fragments.QuickSettings;
-import org.candy.candyshop.fragments.Torch;
+import org.candy.candyshop.fragments.PowerButton;
 
 public class SearchIndexableResourcesImpl implements SearchIndexableResources {
 
@@ -225,7 +225,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(NavGestureSettings.class);
         addIndex(NetworkTraffic.class);
         addIndex(QuickSettings.class);
-        addIndex(Torch.class);
+        addIndex(PowerButton.class);
     }
 
     @Override
