@@ -59,7 +59,7 @@
         android:key="alarm_volume"
         android:icon="@*android:drawable/ic_audio_alarm"
         android:title="@string/alarm_volume_option_title"
-        android:order="-133"
+        android:order="-173"
         settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"/>
 
     <!-- Ring volume -->
@@ -83,7 +83,7 @@
         android:key="volume_link_notification"
         android:title="@string/volume_link_notification_title"
         android:defaultValue="true"
-        android:order="-140"/>
+        android:order="-153"/>
 
     <!-- Increasing ring -->
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
@@ -159,6 +159,17 @@
           android:title="@string/other_sound_category_preference_title"
           android:order="-50">
 
+        <!-- Vibrate on touch -->
+        <SwitchPreference
+          android:key="vibrate_on_touch"
+          android:title="@string/vibrate_on_touch_title"
+          android:summary="@string/vibrate_on_touch_summary" />
+
+        <!-- Touch sounds -->
+        <SwitchPreference
+          android:key="touch_sounds"
+          android:title="@string/touch_sounds_title" />
+
         <!-- Dial pad tones -->
         <SwitchPreference
           android:key="dial_pad_tones"
@@ -178,17 +189,6 @@
         <SwitchPreference
           android:key="docking_sounds"
           android:title="@string/docking_sounds_title" />
-
-        <!-- Touch sounds -->
-        <SwitchPreference
-          android:key="touch_sounds"
-          android:title="@string/touch_sounds_title" />
-
-        <!-- Vibrate on touch -->
-        <SwitchPreference
-          android:key="vibrate_on_touch"
-          android:title="@string/vibrate_on_touch_title"
-          android:summary="@string/vibrate_on_touch_summary" />
 
         <!-- Dock speaker plays -->
         <DropDownPreference
@@ -213,37 +213,37 @@
         android:title="@string/sound_work_settings"
         android:order="100">
 
-                <!-- Use the same sounds of the work profile -->
-                <SwitchPreference
-                    android:key="work_use_personal_sounds"
-                    android:title="@string/work_use_personal_sounds_title"
-                    android:summary="@string/work_use_personal_sounds_summary"
-                    android:disableDependentsState="true" />
+        <!-- Use the same sounds of the work profile -->
+        <SwitchPreference
+            android:key="work_use_personal_sounds"
+            android:title="@string/work_use_personal_sounds_title"
+            android:summary="@string/work_use_personal_sounds_summary"
+            android:disableDependentsState="true" />
 
-                <!-- Work phone ringtone -->
-                <com.android.settings.DefaultRingtonePreference
-                    android:key="work_ringtone"
-                    android:title="@string/work_ringtone_title"
-                    android:dialogTitle="@string/work_alarm_ringtone_title"
-                    android:ringtoneType="ringtone"
-                    android:dependency="work_use_personal_sounds" />
+        <!-- Work phone ringtone -->
+        <com.android.settings.DefaultRingtonePreference
+            android:key="work_ringtone"
+            android:title="@string/work_ringtone_title"
+            android:dialogTitle="@string/work_alarm_ringtone_title"
+            android:ringtoneType="ringtone"
+            android:dependency="work_use_personal_sounds" />
 
-                <!-- Default work notification ringtone -->
-                <com.android.settings.DefaultRingtonePreference
-                    android:key="work_notification_ringtone"
-                    android:title="@string/work_notification_ringtone_title"
-                    android:dialogTitle="@string/work_alarm_ringtone_title"
-                    android:ringtoneType="notification"
-                    android:dependency="work_use_personal_sounds" />
+        <!-- Default work notification ringtone -->
+        <com.android.settings.DefaultRingtonePreference
+            android:key="work_notification_ringtone"
+            android:title="@string/work_notification_ringtone_title"
+            android:dialogTitle="@string/work_alarm_ringtone_title"
+            android:ringtoneType="notification"
+            android:dependency="work_use_personal_sounds" />
 
-                <!-- Default work alarm ringtone -->
-                <com.android.settings.DefaultRingtonePreference
-                    android:key="work_alarm_ringtone"
-                    android:title="@string/work_alarm_ringtone_title"
-                    android:dialogTitle="@string/work_alarm_ringtone_title"
-                    android:persistent="false"
-                    android:ringtoneType="alarm"
-                    android:dependency="work_use_personal_sounds" />
+        <!-- Default work alarm ringtone -->
+        <com.android.settings.DefaultRingtonePreference
+            android:key="work_alarm_ringtone"
+            android:title="@string/work_alarm_ringtone_title"
+            android:dialogTitle="@string/work_alarm_ringtone_title"
+            android:persistent="false"
+            android:ringtoneType="alarm"
+            android:dependency="work_use_personal_sounds" />
 
     </com.android.settings.widget.WorkOnlyCategory>
 </PreferenceScreen>
