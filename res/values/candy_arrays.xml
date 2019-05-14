@@ -36,10 +36,15 @@
 
      <!-- QS tile styles -->
     <string-array name="qs_tile_style_selector_entries" translatable="false">
-       <item>@string/qs_tile_style_square</item>
-        <item>@string/qs_tile_style_rounded_square</item>
+        <item>@string/qs_tile_style_default</item>
+        <item>@string/qs_tile_style_square</item>
         <item>@string/qs_tile_style_squircle</item>
+        <item>@string/qs_tile_style_squircle_trim</item>
         <item>@string/qs_tile_style_tear_drop</item>
+        <item>@string/qs_tile_style_hexagon</item>
+        <item>@string/qs_tile_style_hexicon</item>
+        <item>@string/qs_tile_style_circle_trim</item>
+        <item>@string/qs_tile_style_dual_tone_circle</item>
     </string-array>
 
     <string-array name="qs_tile_style_selector_values" translatable="false">
@@ -47,6 +52,11 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
     </string-array>
 
     <!-- Less Notifications -->
